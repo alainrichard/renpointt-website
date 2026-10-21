@@ -27,9 +27,9 @@ Open `index.html` in a browser. No build step or package installation is require
 
 ## Publish with GitHub Pages
 
-1. Push the project files to the repository's `main` branch.
-2. In GitHub, open **Settings → Pages**.
-3. Set the deployment source to the `main` branch and the repository root.
+The workflow in `.github/workflows/pages.yml` deploys the site to GitHub Pages
+whenever changes are pushed to `main`. It can also be started manually from the
+repository's **Actions** tab.
 
 The quote forms use `mailto:` and do not submit to a server. Visitors need a configured
 email application to send a request.
