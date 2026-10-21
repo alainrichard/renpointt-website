@@ -10,8 +10,33 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0D1626">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; frame-src https://www.google.com; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://images.pexels.com; form-action 'self' mailto:; upgrade-insecure-requests">
 <link rel="canonical" href="https://www.renpointt.se/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HouseCleaning",
+  "@id": "https://www.renpointt.se/#business",
+  "name": "RenPointt Service",
+  "url": "https://www.renpointt.se/",
+  "logo": "https://www.renpointt.se/img/rp-mark.png",
+  "email": "renpointt@gmail.com",
+  "telephone": "+46760984690",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Skogängsvägen 15 A",
+    "postalCode": "163 49",
+    "addressLocality": "Stockholm",
+    "addressCountry": "SE"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Stockholm and surrounding areas"
+  },
+  "openingHours": ["Mo-Fr 07:00-17:00", "Sa 08:00-15:00"],
+  "availableLanguage": ["English", "Swedish"]
+}
+</script>
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -358,6 +383,7 @@
   .service-card:hover{background:#FCFBF7; transform:translateY(-2px); box-shadow:inset 0 0 0 1px rgba(212,175,55,0.12);}
   .service-icon{width:52px; height:52px; margin-bottom:26px;}
   .service-card h3{font-size:20px; font-weight:700; color:var(--navy); margin-bottom:16px;}
+  .service-card .service-detail{margin-top:14px; color:#5b6472; font-size:13px; line-height:1.7;}
   .service-card ul li{
     font-size:14.5px; color:#5b6472; padding:7px 0 7px 18px; border-top:1px solid #ececec; position:relative;
   }
@@ -403,6 +429,7 @@
   .gallery-credit{margin-top:26px; text-align:right; font-size:11px; color:#9aa4b0;}
   .gallery-credit a{color:#9aa4b0; text-decoration:underline;}
   .gallery-item{cursor:zoom-in;}
+  .gallery-note{margin:18px auto 0; max-width:760px; color:var(--muted); font-size:13px; line-height:1.7; text-align:center;}
 
   /* ---------- Lightbox ---------- */
   .lightbox{
@@ -422,8 +449,10 @@
   .faq-item:first-child{border-top:1px solid #e2ded4;}
   .faq-q{
     display:flex; align-items:center; justify-content:space-between; gap:20px;
+    width:100%; border:0; background:transparent; text-align:left;
     padding:22px 4px; cursor:pointer; font-family:'Montserrat'; font-weight:700; font-size:16px; color:var(--navy);
   }
+  .faq-q:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
   .faq-q .plus{
     flex:0 0 auto; width:24px; height:24px; border:1px solid var(--gold); border-radius:50%; position:relative; transition:transform .3s ease;
   }
@@ -529,7 +558,10 @@
   .info-block h5{font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:6px;}
   .info-block p, .info-block a{font-size:15px; color:rgba(255,255,255,0.82); line-height:1.6;}
   .map-frame{margin-top:26px; border:1px solid rgba(255,255,255,0.15); overflow:hidden; filter:grayscale(0.15) contrast(1.05);}
-  .map-frame iframe{width:100%; height:220px; border:0; display:block;}
+  .map-frame a{min-height:140px; display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:10px; padding:24px; background:linear-gradient(135deg,rgba(212,175,55,0.12),rgba(255,255,255,0.03)); color:var(--white);}
+  .map-frame a strong{color:var(--gold); font-family:'Montserrat',sans-serif; font-size:16px;}
+  .map-frame a span{color:rgba(255,255,255,0.75); font-size:13px; line-height:1.6;}
+  .map-frame a:focus-visible{outline:3px solid var(--gold); outline-offset:-4px;}
 
   form{display:grid; gap:18px;}
   .form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
@@ -547,6 +579,8 @@
   .form-foot{display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:6px;}
   .form-note{font-size:12.5px; color:rgba(255,255,255,0.45); max-width:280px;}
   .form-status{font-size:13px; color:var(--gold); min-height:18px;}
+  .form-privacy{margin-top:10px; color:rgba(255,255,255,0.65); font-size:12.5px; line-height:1.7;}
+  .form-privacy a{color:var(--gold-light); text-decoration:underline; text-underline-offset:3px;}
 
   /* ---------- Footer ---------- */
   footer{background:var(--navy-deep); border-top:1px solid rgba(255,255,255,0.08); padding:50px 0 26px;}
@@ -559,6 +593,7 @@
   .foot-links h6{color:var(--gold); font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; margin-bottom:16px;}
   .foot-links a, .foot-links p{display:block; color:rgba(255,255,255,0.55); font-size:14px; margin-bottom:10px;}
   .foot-links a:hover{color:var(--gold);}
+  .foot-links a:focus-visible,.foot-bottom a:focus-visible{outline:2px solid var(--gold); outline-offset:4px;}
   .foot-bottom{display:flex; justify-content:space-between; padding-top:22px; flex-wrap:wrap; gap:10px;}
   .foot-bottom p{color:rgba(255,255,255,0.35); font-size:12.5px;}
 
@@ -928,8 +963,8 @@
           <div><h3 data-i18n="quote.title">Get a fast quote</h3><span data-i18n="quote.subtitle">Reply within 1 business day</span></div>
         </div>
         <form id="heroQuoteForm">
-          <div class="field"><label for="hqName" data-i18n="form.name">Name</label><input id="hqName" name="name" type="text" data-placeholder="form.namePlaceholder" placeholder="Your name" required></div>
-          <div class="field"><label for="hqPhone" data-i18n="form.phone">Mobile number</label><input id="hqPhone" name="phone" type="tel" data-placeholder="form.phonePlaceholder" placeholder="+46 ..." required></div>
+          <div class="field"><label for="hqName" data-i18n="form.name">Name</label><input id="hqName" name="name" type="text" autocomplete="name" maxlength="100" data-placeholder="form.namePlaceholder" placeholder="Your name" required></div>
+          <div class="field"><label for="hqPhone" data-i18n="form.phone">Mobile number</label><input id="hqPhone" name="phone" type="tel" autocomplete="tel" maxlength="30" data-placeholder="form.phonePlaceholder" placeholder="+46 ..." required></div>
           <div class="field">
             <label for="hqService" data-i18n="form.service">Service</label>
             <select id="hqService" name="service" required>
@@ -943,6 +978,7 @@
           </div>
           <button type="submit" class="btn-primary" data-i18n="quote.button">Get a quote</button>
         </form>
+        <p class="form-status" id="heroQuoteStatus" aria-live="polite"></p>
         <div class="quote-card-note" data-i18n="quote.note">No obligation — just a straight answer on price and timing.</div>
       </div>
     </div>
@@ -982,6 +1018,7 @@
           <li data-i18n="services.item.regular">Regular cleaning</li>
           <li data-i18n="services.item.deep">Deep cleaning</li>
         </ul>
+        <p class="service-detail" data-i18n="services.detail.residential">Choose a recurring visit or a one-off deep clean, planned around your home and preferred schedule.</p>
       </div>
       <div class="service-card">
         <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><rect x="8" y="6" width="26" height="36" rx="1"/><path d="M14 14h4M22 14h4M14 22h4M22 22h4M14 30h4M22 30h4"/><path d="M34 42V22h6v20"/></svg>
@@ -992,6 +1029,7 @@
           <li data-i18n="services.item.stairwell">Stairwell cleaning</li>
           <li data-i18n="services.item.common">Common area cleaning</li>
         </ul>
+        <p class="service-detail" data-i18n="services.detail.commercial">Cleaning for offices, shops, stairwells and shared spaces. Contact us to discuss your premises and schedule.</p>
       </div>
       <div class="service-card">
         <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><rect x="10" y="6" width="28" height="36" rx="1"/><path d="M24 6v36M10 24h28"/></svg>
@@ -1000,6 +1038,7 @@
           <li data-i18n="services.item.interior">Interior &amp; exterior glass</li>
           <li data-i18n="services.item.streak">Streak-free finish</li>
         </ul>
+        <p class="service-detail" data-i18n="services.detail.windows">Tell us about your windows and access requirements so we can discuss a suitable service.</p>
       </div>
       <div class="service-card">
         <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><rect x="10" y="16" width="22" height="20" rx="1"/><path d="M16 16v-4h10v4"/><path d="M32 22h6l4 6v8h-10"/><circle cx="18" cy="38" r="3" fill="#D4AF37" stroke="none"/><circle cx="34" cy="38" r="3" fill="#D4AF37" stroke="none"/></svg>
@@ -1008,6 +1047,7 @@
           <li data-i18n="services.item.turnover">Full property turnover clean</li>
           <li data-i18n="services.item.tenancy">End-of-tenancy ready</li>
         </ul>
+        <p class="service-detail" data-i18n="services.detail.moveout">A thorough clean when a property is changing occupants. Share the size and timing for a tailored quote.</p>
       </div>
     </div>
     <div class="sub-banner rv">
@@ -1026,9 +1066,9 @@
 <section id="gallery">
   <div class="wrap">
     <div class="section-head rv">
-      <div class="eyebrow"><span class="rule"></span><span data-i18n="gallery.heading">OUR WORK</span></div>
-      <h2 data-i18n="gallery.title">What precision looks like on the job.</h2>
-      <p data-i18n="gallery.text">A look at the four services we're called for most across Stockholm.</p>
+      <div class="eyebrow"><span class="rule"></span><span data-i18n="gallery.heading">SERVICE EXAMPLES</span></div>
+      <h2 data-i18n="gallery.title">Cleaning services, at a glance.</h2>
+      <p data-i18n="gallery.text">Explore the types of cleaning we offer across Stockholm.</p>
     </div>
     <div class="gallery-grid rv">
       <div class="gallery-item">
@@ -1187,6 +1227,7 @@
         <small class="form-note" id="careerMessageHelp" data-i18n="careers.messageHelp">Keep your introduction brief (up to 500 characters) and avoid sensitive personal details.</small>
       </div>
       <p class="form-note" data-i18n="careers.note">Selecting this button opens a draft in your email app. Nothing is sent until you review and send the email. Attach your CV only if you are comfortable sharing it; this website cannot attach files.</p>
+      <p class="form-note"><a href="privacy.html" data-i18n="footer.privacy">Privacy notice</a></p>
       <button type="submit" class="btn-primary" data-i18n="careers.submit">Continue in email</button>
       <p class="career-status" id="careerStatus" aria-live="polite"></p>
       <p class="career-email-fallback"><span data-i18n="careers.emailFallback">Email us directly:</span> <a href="mailto:renpointt@gmail.com">renpointt@gmail.com</a></p>
@@ -1211,24 +1252,24 @@
     </div>
     <div class="faq-list rv">
       <div class="faq-item open">
-        <div class="faq-q"><span data-i18n="faq.q1">Do you bring your own cleaning supplies and equipment?</span><span class="plus"></span></div>
-        <div class="faq-a"><p data-i18n="faq.a1">Yes — our team arrives with professional-grade supplies and equipment as standard, so there's nothing you need to prepare in advance.</p></div>
+        <button class="faq-q" type="button" aria-expanded="true" aria-controls="faqAnswer1"><span data-i18n="faq.q1">Do you bring your own cleaning supplies and equipment?</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a" id="faqAnswer1" aria-hidden="false"><p data-i18n="faq.a1">Yes — our team arrives with professional-grade supplies and equipment as standard, so there's nothing you need to prepare in advance.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><span data-i18n="faq.q2">How quickly can I get a quote?</span><span class="plus"></span></div>
-        <div class="faq-a"><p data-i18n="faq.a2">Send your details through the contact form or the quick-quote box in the hero, and we'll come back with a free, transparent quote — usually within one business day.</p></div>
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faqAnswer2"><span data-i18n="faq.q2">How quickly can I get a quote?</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a" id="faqAnswer2" aria-hidden="true"><p data-i18n="faq.a2">Send your details through the contact form or the quick-quote box in the hero, and we'll come back with a free, transparent quote — usually within one business day.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><span data-i18n="faq.q3">Do you offer one-off cleans or only recurring contracts?</span><span class="plus"></span></div>
-        <div class="faq-a"><p data-i18n="faq.a3">Both. Regular weekly or bi-weekly visits, one-off deep cleans, and move-in / move-out jobs are all available, scheduled around you.</p></div>
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faqAnswer3"><span data-i18n="faq.q3">Do you offer one-off cleans or only recurring contracts?</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a" id="faqAnswer3" aria-hidden="true"><p data-i18n="faq.a3">Both. Regular weekly or bi-weekly visits, one-off deep cleans, and move-in / move-out jobs are all available, scheduled around you.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><span data-i18n="faq.q4">Can cleaning companies subcontract staff through you?</span><span class="plus"></span></div>
-        <div class="faq-a"><p data-i18n="faq.a4">Yes — we provide trained cleaning staff and subcontracting support for other cleaning companies who need reliable extra coverage.</p></div>
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faqAnswer4"><span data-i18n="faq.q4">Can cleaning companies subcontract staff through you?</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a" id="faqAnswer4" aria-hidden="true"><p data-i18n="faq.a4">Yes — we provide trained cleaning staff and subcontracting support for other cleaning companies who need reliable extra coverage.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><span data-i18n="faq.q5">What areas do you serve?</span><span class="plus"></span></div>
-        <div class="faq-a"><p data-i18n="faq.a5">We're based in Stockholm and serve the surrounding areas. Get in touch with your address and we'll confirm coverage.</p></div>
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faqAnswer5"><span data-i18n="faq.q5">What areas do you serve?</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a" id="faqAnswer5" aria-hidden="true"><p data-i18n="faq.a5">We're based in Stockholm and serve the surrounding areas. Get in touch with your address and we'll confirm coverage.</p></div>
       </div>
     </div>
   </div>
@@ -1248,17 +1289,20 @@
       <div class="info-block"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 4.8h2.2l1.6 5.7-1.5 1.5a12 12 0 0 0 7.4 7.4l1.5-1.5 5.7 1.6v2.2A2.2 2.2 0 0 1 20.3 21 15.7 15.7 0 0 1 4.8 4.8a2.2 2.2 0 0 1 1.8-2Z"></path></svg></div><div><h5 data-i18n="contact.phone">Phone</h5><a href="tel:+46760984690">+46 76 098 46 90</a></div></div>
       <div class="info-block"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v8l5 3"></path></svg></div><div><h5 data-i18n="contact.hours">Hours</h5><p>Monday–Friday: 07:00–17:00<br>Saturday: 08:00–15:00</p></div></div>
       <div class="map-frame">
-        <iframe src="https://www.google.com/maps?q=Skog%C3%A4ngsv%C3%A4gen%2015A%2C%20163%2049%20Stockholm%2C%20Sweden&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="RenPointt Service location"></iframe>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Skog%C3%A4ngsv%C3%A4gen%2015A%2C%20163%2049%20Stockholm%2C%20Sweden" data-i18n-aria-label="contact.mapLinkLabel" aria-label="Open the address in Google Maps">
+          <strong data-i18n="contact.mapLinkTitle">Find us in Stockholm</strong>
+          <span data-i18n="contact.mapLinkText">Open the address in Google Maps. The map only loads when you choose this link.</span>
+        </a>
       </div>
     </div>
 
     <form id="quoteForm" class="rv">
       <div class="form-row">
-        <div class="field"><label for="fname" data-i18n="contact.formName">Name</label><input id="fname" name="name" type="text" placeholder="Your full name" data-placeholder="form.namePlaceholder" required></div>
-        <div class="field"><label for="fphone" data-i18n="contact.formPhone">Phone number</label><input id="fphone" name="phone" type="tel" placeholder="+46 ..." data-placeholder="form.phonePlaceholder" required></div>
+        <div class="field"><label for="fname" data-i18n="contact.formName">Name</label><input id="fname" name="name" type="text" autocomplete="name" maxlength="100" placeholder="Your full name" data-placeholder="form.namePlaceholder" required></div>
+        <div class="field"><label for="fphone" data-i18n="contact.formPhone">Phone number</label><input id="fphone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="+46 ..." data-placeholder="form.phonePlaceholder" required></div>
       </div>
       <div class="form-row">
-        <div class="field"><label for="femail" data-i18n="contact.formEmail">Email</label><input id="femail" name="email" type="email" placeholder="you@example.com" data-placeholder="contact.formEmailPlaceholder" required></div>
+        <div class="field"><label for="femail" data-i18n="contact.formEmail">Email</label><input id="femail" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" data-placeholder="contact.formEmailPlaceholder" required></div>
         <div class="field"><label for="fservice" data-i18n="contact.formService">Service required</label>
           <select id="fservice" name="service" required>
             <option value="" disabled selected data-i18n="form.servicePlaceholder">Select a service</option>
@@ -1270,15 +1314,16 @@
         </div>
       </div>
       <div class="form-row">
-        <div class="field"><label for="faddress" data-i18n="contact.formAddress">Property address</label><input id="faddress" name="address" type="text" placeholder="Street, city" data-placeholder="contact.formAddressPlaceholder"></div>
+        <div class="field"><label for="faddress" data-i18n="contact.formAddress">Property address</label><input id="faddress" name="address" type="text" autocomplete="street-address" maxlength="160" placeholder="Street, city" data-placeholder="contact.formAddressPlaceholder"></div>
         <div class="field"><label for="fdate" data-i18n="contact.formDate">Preferred date</label><input id="fdate" name="date" type="date"></div>
       </div>
-      <div class="field"><label for="fmore" data-i18n="contact.formMore">Additional information</label><textarea id="fmore" name="more" placeholder="Anything else we should know?" data-placeholder="contact.formMorePlaceholder"></textarea></div>
+      <div class="field"><label for="fmore" data-i18n="contact.formMore">Additional information</label><textarea id="fmore" name="more" maxlength="1000" placeholder="Anything else we should know?" data-placeholder="contact.formMorePlaceholder"></textarea></div>
       <div class="form-foot">
         <span class="form-note" data-i18n="contact.formNote">We'll reply with a free, no-obligation quote — usually within one business day.</span>
         <button type="submit" class="btn-primary" data-i18n="contact.formSubmit">Send request</button>
       </div>
-      <div class="form-status" id="formStatus"></div>
+      <div class="form-status" id="formStatus" aria-live="polite"></div>
+      <p class="form-privacy"><span data-i18n="contact.formPrivacy">This form prepares an email draft on your device; it is sent only when you choose to send it.</span> <a href="privacy.html" data-i18n="footer.privacy">Privacy notice</a></p>
     </form>
   </div>
 </section>
@@ -1307,6 +1352,7 @@
           <a href="#careers" data-i18n="nav.careers">Careers</a>
           <a href="#process" data-i18n="nav.process">How it works</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy notice</a>
         </div>
         <div>
           <h6 data-i18n="footer.contact">Contact</h6>
@@ -1354,7 +1400,7 @@
       'hero.stat2': 'Days a week',
       'hero.stat3': 'Typical quote response',
       'quote.title': 'Get a fast quote',
-      'quote.subtitle': 'Reply within 1 business day',
+      'quote.subtitle': 'Opens an email draft',
       'form.name': 'Name',
       'form.namePlaceholder': 'Your name',
       'form.phone': 'Mobile number',
@@ -1390,12 +1436,17 @@
       'services.item.streak': 'Streak-free finish',
       'services.item.turnover': 'Full property turnover clean',
       'services.item.tenancy': 'End-of-tenancy ready',
+      'services.detail.residential': 'Choose a recurring visit or a one-off deep clean, planned around your home and preferred schedule.',
+      'services.detail.commercial': 'Cleaning for offices, shops, stairwells and shared spaces. Contact us to discuss your premises and schedule.',
+      'services.detail.windows': 'Tell us about your windows and access requirements so we can discuss a suitable service.',
+      'services.detail.moveout': 'A thorough clean when a property is changing occupants. Share the size and timing for a tailored quote.',
       'services.subTitle': 'Subcontracting Services',
       'services.subText': 'We provide professional cleaning staff and subcontracting services for cleaning companies — flexible, trained hands whenever you need extra coverage.',
       'services.subBtn': 'Discuss subcontracting',
-      'gallery.heading': 'OUR WORK',
-      'gallery.title': 'What precision looks like on the job.',
-      'gallery.text': 'A look at the four services we are called for most across Stockholm.',
+      'gallery.heading': 'SERVICE EXAMPLES',
+      'gallery.title': 'Cleaning services, at a glance.',
+      'gallery.text': 'Explore the types of cleaning we offer across Stockholm.',
+      'gallery.note': '',
       'gallery.residential': 'RESIDENTIAL',
       'gallery.commercial': 'COMMERCIAL',
       'gallery.windows': 'WINDOWS',
@@ -1489,6 +1540,9 @@
       'contact.email': 'Email',
       'contact.phone': 'Phone',
       'contact.hours': 'Hours',
+      'contact.mapLinkLabel': 'Open the address in Google Maps',
+      'contact.mapLinkTitle': 'Find us in Stockholm',
+      'contact.mapLinkText': 'Open the address in Google Maps. The map only loads when you choose this link.',
       'contact.formName': 'Name',
       'contact.formPhone': 'Phone number',
       'contact.formEmail': 'Email',
@@ -1499,12 +1553,16 @@
       'contact.formDate': 'Preferred date',
       'contact.formMore': 'Additional information',
       'contact.formMorePlaceholder': 'Anything else we should know?',
-      'contact.formNote': "We'll reply with a free, no-obligation quote — usually within one business day.",
+      'contact.formNote': 'Your request opens as an email draft. We will reply after you send it, usually within one business day.',
+      'contact.formPrivacy': 'This form prepares an email draft on your device; it is sent only when you choose to send it.',
+      'contact.emailReady': 'Your email draft should open in your email app. Review it and send it when ready.',
+      'contact.emailTooLong': 'This request is too long to open as an email draft. Shorten the additional information or email us directly.',
       'contact.formSubmit': 'Send request',
       'service.other': 'Other',
       'footer.services': 'Services',
       'footer.company': 'Company',
       'footer.contact': 'Contact',
+      'footer.privacy': 'Privacy notice',
       'footer.about': 'About us',
       'footer.how': 'How it works',
       'footer.rights': 'All rights reserved.',
@@ -1530,7 +1588,7 @@
       'hero.stat2': 'Dagar i veckan',
       'hero.stat3': 'Vanlig svarstid för offert',
       'quote.title': 'Få en snabb offert',
-      'quote.subtitle': 'Svar inom 1 arbetsdag',
+      'quote.subtitle': 'Öppnar ett e-postutkast',
       'form.name': 'Namn',
       'form.namePlaceholder': 'Ditt namn',
       'form.phone': 'Mobilnummer',
@@ -1566,12 +1624,17 @@
       'services.item.streak': 'Fläckfri finish',
       'services.item.turnover': 'Total städning inför byte',
       'services.item.tenancy': 'Redo för slutbesiktning',
+      'services.detail.residential': 'Välj regelbunden städning eller en enstaka storstädning, planerad efter ditt hem och önskat schema.',
+      'services.detail.commercial': 'Städning av kontor, butiker, trapphus och gemensamma utrymmen. Kontakta oss för att diskutera lokaler och schema.',
+      'services.detail.windows': 'Berätta om dina fönster och tillträdeskrav så diskuterar vi en lämplig tjänst.',
+      'services.detail.moveout': 'Grundlig städning vid byte av boende. Berätta om yta och tidplan för en anpassad offert.',
       'services.subTitle': 'Städtjänster som underleverantör',
       'services.subText': 'Vi erbjuder professionell städpersonal som underleverantör till städföretag — flexibel och kompetent förstärkning när ni behöver extra kapacitet.',
       'services.subBtn': 'Diskutera underleverans',
-      'gallery.heading': 'VÅRT ARBETE',
-      'gallery.title': 'Så ser precision ut i praktiken.',
-      'gallery.text': 'Ett urval av de fyra tjänster vi oftast utför i Stockholm.',
+      'gallery.heading': 'TJÄNSTEEXEMPEL',
+      'gallery.title': 'Våra städtjänster i korthet.',
+      'gallery.text': 'Upptäck städtjänsterna vi erbjuder i Stockholm.',
+      'gallery.note': '',
       'gallery.residential': 'BOSTAD',
       'gallery.commercial': 'KOMMERS',
       'gallery.windows': 'FÖNSTER',
@@ -1665,6 +1728,9 @@
       'contact.email': 'E-post',
       'contact.phone': 'Telefon',
       'contact.hours': 'Öppettider',
+      'contact.mapLinkLabel': 'Öppna adressen i Google Maps',
+      'contact.mapLinkTitle': 'Hitta oss i Stockholm',
+      'contact.mapLinkText': 'Öppna adressen i Google Maps. Kartan laddas först när du väljer länken.',
       'contact.formName': 'Namn',
       'contact.formPhone': 'Telefonnummer',
       'contact.formEmail': 'E-post',
@@ -1675,12 +1741,16 @@
       'contact.formDate': 'Önskat datum',
       'contact.formMore': 'Ytterligare information',
       'contact.formMorePlaceholder': 'Något annat vi bör veta?',
-      'contact.formNote': 'Vi återkommer med en gratis offert utan förpliktelse — vanligtvis inom en arbetsdag.',
+      'contact.formNote': 'Din förfrågan öppnas som ett e-postutkast. Vi svarar när du har skickat det, vanligtvis inom en arbetsdag.',
+      'contact.formPrivacy': 'Formuläret skapar ett e-postutkast på din enhet; det skickas först när du väljer att skicka det.',
+      'contact.emailReady': 'Ett e-postutkast bör öppnas i ditt e-postprogram. Granska det och skicka när du är redo.',
+      'contact.emailTooLong': 'Förfrågan är för lång för att öppnas som ett e-postutkast. Korta ned informationen eller e-posta oss direkt.',
       'contact.formSubmit': 'Skicka förfrågan',
       'service.other': 'Övrigt',
       'footer.services': 'Tjänster',
       'footer.company': 'Företag',
       'footer.contact': 'Kontakt',
+      'footer.privacy': 'Integritetsinformation',
       'footer.about': 'Om oss',
       'footer.how': 'Så fungerar det',
       'footer.rights': 'Alla rättigheter förbehållna.',
@@ -1733,6 +1803,10 @@
       const key = el.dataset.placeholder;
       if (dict[key]) el.placeholder = dict[key];
     });
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+      const key = el.dataset.i18nAriaLabel;
+      if (dict[key]) el.setAttribute('aria-label', dict[key]);
+    });
     document.documentElement.lang = lang;
     langSelect.value = lang;
     localStorage.setItem('rp-lang', lang);
@@ -1776,27 +1850,41 @@
   }, { threshold: 0.18 });
   rvEls.forEach(el => io.observe(el));
 
+  function openEmailDraft(mailto, statusElement, readyMessage, tooLongMessage) {
+    if (mailto.length > 1800) {
+      statusElement.textContent = tooLongMessage;
+      return;
+    }
+    statusElement.textContent = readyMessage;
+    window.location.href = mailto;
+  }
+
   // contact form -> mailto handoff
   const form = document.getElementById('quoteForm');
   const status = document.getElementById('formStatus');
   form.addEventListener('submit', function(e){
     e.preventDefault();
+    if (!form.reportValidity()) return;
     const d = Object.fromEntries(new FormData(form).entries());
     const body =
       `Name: ${d.name}\nPhone: ${d.phone}\nEmail: ${d.email}\nService required: ${d.service}\n` +
       `Property address: ${d.address || '—'}\nPreferred date: ${d.date || '—'}\n\nAdditional information:\n${d.more || '—'}`;
     const mailto = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('Quote request — ' + d.service)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
-    status.textContent = 'Opening your email client to send this request…';
+    const dict = translations[langSelect.value] || translations.en;
+    openEmailDraft(mailto, status, dict['contact.emailReady'], dict['contact.emailTooLong']);
   });
 
   // hero quick-quote form -> mailto handoff
   const heroForm = document.getElementById('heroQuoteForm');
+  const heroStatus = document.getElementById('heroQuoteStatus');
   heroForm.addEventListener('submit', function(e){
     e.preventDefault();
+    if (!heroForm.reportValidity()) return;
     const d = Object.fromEntries(new FormData(heroForm).entries());
     const body = `Name: ${d.name}\nPhone: ${d.phone}\nService required: ${d.service}\n\n(Sent via the hero quick-quote form)`;
-    window.location.href = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('Quick quote request — ' + d.service)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('Quick quote request — ' + d.service)}&body=${encodeURIComponent(body)}`;
+    const dict = translations[langSelect.value] || translations.en;
+    openEmailDraft(mailto, heroStatus, dict['contact.emailReady'], dict['contact.emailTooLong']);
   });
 
   // Career applications are prepared locally as an email draft; nothing is uploaded.
@@ -1811,12 +1899,8 @@
       `Name: ${d.name}\nEmail: ${d.email}\nPhone: ${d.phone}\nArea of interest: ${role.selectedOptions[0].text}\n\n` +
       `Experience and availability:\n${d.message}`;
     const mailto = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('RenPointt application')}&body=${encodeURIComponent(body)}`;
-    if (mailto.length > 1800) {
-      careerStatus.textContent = translations[langSelect.value]['careers.emailTooLong'];
-      return;
-    }
-    careerStatus.textContent = translations[langSelect.value]['careers.emailReady'];
-    window.location.href = mailto;
+    const dict = translations[langSelect.value] || translations.en;
+    openEmailDraft(mailto, careerStatus, dict['careers.emailReady'], dict['careers.emailTooLong']);
   });
 
   // lightbox for gallery images
@@ -1837,10 +1921,19 @@
 
   // FAQ accordion
   document.querySelectorAll('.faq-item').forEach(item => {
-    item.querySelector('.faq-q').addEventListener('click', () => {
+    const button = item.querySelector('.faq-q');
+    button.addEventListener('click', () => {
       const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!wasOpen) item.classList.add('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-a').setAttribute('aria-hidden', 'true');
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        button.setAttribute('aria-expanded', 'true');
+        item.querySelector('.faq-a').setAttribute('aria-hidden', 'false');
+      }
     });
   });
 </script>
