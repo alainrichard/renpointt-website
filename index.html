@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RenPointt Service — Precision in Every Clean | Stockholm Cleaning</title>
+<meta name="description" content="Professional residential, commercial and subcontracted cleaning across Stockholm. Precision in every clean.">
+<meta name="keywords" content="cleaning Stockholm, residential cleaning, commercial cleaning, office cleaning, window cleaning, move-in move-out cleaning, cleaning subcontractor, RenPointt Service">
+<meta name="author" content="RenPointt Service">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0D1626">
+<link rel="canonical" href="https://www.renpointt.se/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RenPointt Service">
+<meta property="og:title" content="RenPointt Service — Precision in Every Clean">
+<meta property="og:description" content="Professional residential, commercial and subcontracted cleaning across Stockholm — reliable, affordable, and finished to a standard you can see.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:url" content="https://www.renpointt.se/">
+<meta property="og:locale" content="en_SE">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RenPointt Service — Precision in Every Clean">
+<meta name="twitter:description" content="Professional residential, commercial and subcontracted cleaning across Stockholm.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80">
+
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0D1626;
+    --navy-deep:#080D17;
+    --gold:#D4AF37;
+    --gold-light:#E9CC6E;
+    --white:#FFFFFF;
+    --grey:#C0C0C0;
+    --ink:#0D1626;
+    --mist:#F6F5F2;
+    --line: rgba(212,175,55,0.28);
+    --header-solid: rgba(11,37,69,0.94);
+    --panel: rgba(255,255,255,0.04);
+    --panel-border: rgba(212,175,55,0.35);
+    --text-soft: rgba(255,255,255,0.72);
+    --muted: #5b6472;
+  }
+  body[data-theme="light"]{
+    --navy:#12233D;
+    --navy-deep:#0D1A2F;
+    --gold:#C59B2D;
+    --gold-light:#E7C86A;
+    --white:#F6F8FB;
+    --grey:#6F7E90;
+    --ink:#122133;
+    --mist:#EEF2F7;
+    --line: rgba(18,35,61,0.12);
+    --header-solid: rgba(255,255,255,0.9);
+    --panel: rgba(7,24,41,0.03);
+    --panel-border: rgba(18,35,61,0.12);
+    --text-soft: rgba(18,35,61,0.7);
+    --muted: #536176;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg, #f7f5f1 0%, #f2f4f8 100%);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    transition:background .25s ease, color .25s ease;
+  }
+  body[data-theme="light"]{
+    background:linear-gradient(180deg, #f5f7fb 0%, #eef2f8 100%);
+  }
+  h1,h2,h3,.mono-num,.logo-word{font-family:'Montserrat',sans-serif;}
+  .eyebrow{
+    font-family:'Poppins',sans-serif;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:600;
+    color:var(--gold);
+  }
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  @media (max-width:640px){ .wrap{padding:0 20px;} }
+
+  /* ---------- Sparkle glyph ---------- */
+  .spark{position:relative; display:inline-block; width:0.7em; height:0.7em;}
+  .spark::before{
+    content:""; position:absolute; inset:0;
+    background:currentColor; clip-path:polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%);
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(11,37,69,0.0);
+    transition:background .4s ease, box-shadow .4s ease, padding .3s ease;
+    padding:22px 0;
+  }
+  header.solid{
+    background:var(--header-solid);
+    backdrop-filter: blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.18);
+    padding:14px 0;
+  }
+  header .wrap{display:flex; align-items:center; justify-content:space-between;}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand svg, .brand img{height:34px; width:auto;}
+  .brand .name{color:var(--white); font-weight:800; font-size:17px; letter-spacing:0.03em;}
+  .brand .name span{color:var(--gold);}
+  nav.links{display:flex; gap:34px;}
+  nav.links a{
+    color:var(--white); font-size:13px; letter-spacing:0.06em; text-transform:uppercase;
+    font-weight:600; opacity:0.85; position:relative; padding-bottom:4px;
+  }
+  body[data-theme="light"] .brand .name,
+  body[data-theme="light"] nav.links a,
+  body[data-theme="light"] .burger span,
+  body[data-theme="light"] .theme-toggle,
+  body[data-theme="light"] .lang-switch{
+    color:var(--navy);
+  }
+  body[data-theme="light"] .theme-toggle,
+  body[data-theme="light"] .lang-switch{
+    background:rgba(18,35,61,0.04); border-color:rgba(18,35,61,0.18);
+  }
+  nav.links a::after{
+    content:""; position:absolute; left:0; bottom:0; width:0; height:1.5px; background:var(--gold);
+    transition:width .3s ease;
+  }
+  nav.links a:hover{opacity:1;}
+  nav.links a:hover::after{width:100%;}
+  .header-cta{
+    border:1px solid var(--gold); color:var(--gold); padding:9px 20px; border-radius:2px;
+    font-size:12px; letter-spacing:0.08em; text-transform:uppercase; font-weight:700;
+    transition:all .3s ease;
+  }
+  .header-cta:hover{background:var(--gold); color:var(--navy-deep);}
+  .header-tools{display:flex; align-items:center; gap:12px;}
+  .theme-toggle, .lang-switch{
+    border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); color:var(--white);
+    border-radius:999px; height:38px; display:inline-flex; align-items:center; justify-content:center;
+    cursor:pointer; transition:all .25s ease; font-family:'Inter', sans-serif;
+  }
+  .theme-toggle svg, .mobile-close svg, .lightbox-close svg, .check svg, .info-block .ic svg{
+    width:18px; height:18px; display:block;
+  }
+  .theme-toggle svg path, .theme-toggle svg circle, .theme-toggle svg line,
+  .mobile-close svg path, .lightbox-close svg path, .check svg path, .info-block .ic svg path,
+  .info-block .ic svg circle, .info-block .ic svg line,
+  .info-block .ic svg rect{
+    stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;
+  }
+  .theme-toggle{
+    width:38px; font-size:18px; padding:0;
+  }
+  .theme-toggle svg{width:18px; height:18px; display:block;}
+  .theme-toggle svg path, .theme-toggle svg circle, .theme-toggle svg line,
+  .theme-toggle svg g, .theme-toggle svg rect{stroke:currentColor; fill:none;}
+  .lang-switch{
+    padding:0 12px; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; font-weight:700;
+  }
+  .theme-toggle:hover, .lang-switch:hover{border-color:var(--gold); color:var(--gold);}
+  .burger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none;}
+  .burger span{width:24px; height:2px; background:var(--white); display:block;}
+  @media (max-width:900px){
+    nav.links{display:none;}
+    .header-cta{display:none;}
+    .burger{display:flex;}
+  }
+
+  /* mobile menu */
+  .mobile-menu{
+    position:fixed; inset:0; background:var(--navy-deep); z-index:200;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px;
+    transform:translateY(-100%); transition:transform .45s cubic-bezier(.7,0,.2,1);
+  }
+  .mobile-menu.open{transform:translateY(0);}
+  .mobile-menu a{color:var(--white); font-size:22px; font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.04em;}
+  .mobile-close{position:absolute; top:26px; right:28px; background:none; border:none; color:var(--gold); font-size:28px; cursor:pointer; width:42px; height:42px; display:grid; place-items:center;}
+  .mobile-close svg, .lightbox-close svg{width:18px; height:18px; display:block;}
+  .mobile-close svg path, .lightbox-close svg path{stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    background:
+      linear-gradient(120deg, rgba(7,18,34,0.88) 0%, rgba(14,29,47,0.82) 48%, rgba(13,22,38,0.90) 100%),
+      url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80') center 50% / cover no-repeat;
+    display:flex; align-items:center;
+    overflow:hidden;
+    padding-top:120px;
+    padding-bottom:80px;
+    box-shadow: inset 0 0 80px rgba(0,0,0,0.25);
+  }
+  .hero::before{
+    content:""; position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(circle at 50% 40%, black 0%, transparent 72%);
+    pointer-events:none;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:60px; align-items:center;
+    position:relative; z-index:2; width:100%;
+  }
+  @media (max-width:960px){ .hero-grid{grid-template-columns:1fr;} }
+
+  .hero-eyebrow{display:flex; align-items:center; gap:10px; color:var(--gold); margin-bottom:22px;}
+  .hero-eyebrow .rule{width:38px; height:1px; background:var(--gold);}
+
+  .hero h1{
+    color:var(--white); font-weight:800; line-height:1.02;
+    font-size:clamp(40px, 5.6vw, 70px); letter-spacing:-0.04em;
+    text-shadow:0 10px 28px rgba(0,0,0,0.18);
+  }
+  .hero h1 .reveal{
+    display:block; overflow:hidden; position:relative;
+  }
+  .hero h1 .reveal span{display:block; transform:translateY(110%); animation:riseUp .9s cubic-bezier(.2,.8,.2,1) forwards;}
+  .hero h1 .reveal:nth-child(1) span{animation-delay:.15s;}
+  .hero h1 .reveal:nth-child(2) span{animation-delay:.32s; color:var(--gold);}
+  @keyframes riseUp{to{transform:translateY(0);}}
+
+  .shine-wipe{
+    position:absolute; inset:0; z-index:5; pointer-events:none;
+    background:linear-gradient(100deg, transparent 30%, rgba(255,255,255,0.9) 48%, var(--gold-light) 51%, transparent 68%);
+    transform:translateX(-120%) skewX(-12deg);
+    animation:wipe 1.6s cubic-bezier(.6,0,.2,1) .1s forwards;
+  }
+  @keyframes wipe{to{transform:translateX(120%) skewX(-12deg);}}
+
+  .hero p.lede{
+    color:rgba(255,255,255,0.72); font-size:17px; line-height:1.7; max-width:480px; margin-top:26px;
+  }
+  .hero-actions{display:flex; gap:16px; margin-top:38px; flex-wrap:wrap;}
+  .btn-primary{
+    background:linear-gradient(120deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+    background-size:220% 100%;
+    color:var(--navy-deep); font-weight:700; font-size:13px; letter-spacing:0.06em; text-transform:uppercase;
+    padding:16px 30px; border-radius:10px; border:none; cursor:pointer;
+    box-shadow:0 12px 26px rgba(212,175,55,0.22);
+    transition:background-position .6s ease, transform .25s ease, box-shadow .25s ease;
+  }
+  .btn-primary:hover{background-position:100% 0; transform:translateY(-2px); box-shadow:0 16px 30px rgba(212,175,55,0.28);}
+  .btn-ghost{
+    border:1px solid rgba(255,255,255,0.4); color:var(--white); font-weight:600; font-size:13px;
+    letter-spacing:0.06em; text-transform:uppercase; padding:16px 26px; border-radius:10px; transition:.3s;
+    backdrop-filter:blur(6px);
+  }
+  .btn-ghost:hover{border-color:var(--gold); color:var(--gold);}
+
+  .hero-stats{display:flex; gap:36px; margin-top:56px; flex-wrap:wrap;}
+  .hero-stats div{color:var(--white);}
+  .hero-stats .num{font-family:'Montserrat'; font-weight:800; font-size:26px; color:var(--gold);}
+  .hero-stats .label{font-size:12px; letter-spacing:0.05em; color:rgba(255,255,255,0.6); margin-top:4px;}
+
+  /* Hero mark panel */
+  .hero-mark{
+    position:relative; display:flex; align-items:center; justify-content:center;
+  }
+  .mark-frame{
+    position:relative; width:100%; max-width:380px; aspect-ratio:1/1.05;
+    border:1px solid rgba(212,175,55,0.35);
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(255,255,255,0.02);
+  }
+  .mark-frame::before, .mark-frame::after{
+    content:""; position:absolute; width:26px; height:26px; border-color:var(--gold); border-style:solid;
+  }
+  .mark-frame::before{top:-1px; left:-1px; border-width:2px 0 0 2px;}
+  .mark-frame::after{bottom:-1px; right:-1px; border-width:0 2px 2px 0;}
+  .mark-frame svg{width:56%; height:auto;}
+  .mark-caption{
+    position:absolute; bottom:-46px; left:50%; transform:translateX(-50%);
+    color:rgba(255,255,255,0.55); font-size:12px; letter-spacing:0.3em; text-transform:uppercase; white-space:nowrap;
+  }
+  @media (max-width:960px){ .hero-mark{margin-top:20px;} .mark-caption{display:none;} }
+
+  /* ---------- Hero quick-quote card ---------- */
+  .quote-card{
+    position:relative; width:100%; max-width:380px;
+    background:rgba(255,255,255,0.06); border:1px solid rgba(212,175,55,0.35);
+    padding:34px 30px; backdrop-filter:blur(10px);
+    box-shadow:0 24px 50px rgba(3,8,18,0.24);
+  }
+  .quote-card::before, .quote-card::after{
+    content:""; position:absolute; width:22px; height:22px; border-color:var(--gold); border-style:solid;
+  }
+  .quote-card::before{top:-1px; left:-1px; border-width:2px 0 0 2px;}
+  .quote-card::after{bottom:-1px; right:-1px; border-width:0 2px 2px 0;}
+  .quote-card-head{display:flex; align-items:center; gap:12px; margin-bottom:22px;}
+  .quote-card-head svg, .quote-card-head img{width:38px; height:auto; flex:0 0 auto;}
+  .quote-card-head h3{color:var(--white); font-size:17px; font-weight:700;}
+  .quote-card-head span{display:block; color:var(--gold); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; margin-top:2px;}
+  .quote-card .field{margin-bottom:14px;}
+  .quote-card .field label{font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:7px; display:block;}
+  .quote-card .field input, .quote-card .field select{
+    width:100%; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.2); color:var(--white);
+    padding:11px 12px; font-family:'Inter'; font-size:14px; border-radius:2px;
+  }
+  .quote-card .field select option{background:var(--navy-deep);}
+  .quote-card .field input:focus, .quote-card .field select:focus{outline:none; border-color:var(--gold);}
+  .quote-card .btn-primary{width:100%; margin-top:6px;}
+  .quote-card-note{font-size:11.5px; color:rgba(255,255,255,0.4); margin-top:12px; text-align:center;}
+
+  /* ---------- Marquee strip ---------- */
+  .strip{
+    background:var(--gold); overflow:hidden; padding:13px 0; white-space:nowrap;
+  }
+  .strip .track{display:inline-flex; gap:40px; animation:marquee 26s linear infinite;}
+  .strip span{
+    color:var(--navy-deep); font-weight:700; font-size:13px; letter-spacing:0.14em; text-transform:uppercase;
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  @keyframes marquee{from{transform:translateX(0);} to{transform:translateX(-50%);}}
+
+  /* ---------- Section base ---------- */
+  section{padding:110px 0;}
+  @media (max-width:640px){ section{padding:70px 0;} }
+  .section-head{max-width:640px; margin-bottom:64px;}
+  .section-head .eyebrow{margin-bottom:14px; display:flex; align-items:center; gap:10px;}
+  .section-head .eyebrow .rule{width:30px; height:1px; background:var(--gold);}
+  .section-head h2{
+    font-size:clamp(28px,3.6vw,42px); font-weight:800; line-height:1.15; color:var(--navy);
+  }
+  .section-head p{margin-top:18px; color:#5b6472; font-size:16px; line-height:1.7;}
+
+  /* ---------- Services ---------- */
+  .services{background:var(--mist);}
+  .service-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+  @media (max-width:900px){ .service-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .service-grid{grid-template-columns:1fr;} }
+  .service-card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,249,246,0.96)); padding:44px 38px; position:relative; overflow:hidden;
+    transition:background .35s ease, transform .35s ease, box-shadow .35s ease;
+    border-radius:0;
+  }
+  .service-card::before{
+    content:""; position:absolute; left:0; top:0; height:0; width:3px; background:var(--gold);
+    transition:height .4s ease;
+  }
+  .service-card:hover::before{height:100%;}
+  .service-card:hover{background:#FCFBF7; transform:translateY(-2px); box-shadow:inset 0 0 0 1px rgba(212,175,55,0.12);}
+  .service-icon{width:52px; height:52px; margin-bottom:26px;}
+  .service-card h3{font-size:20px; font-weight:700; color:var(--navy); margin-bottom:16px;}
+  .service-card ul li{
+    font-size:14.5px; color:#5b6472; padding:7px 0 7px 18px; border-top:1px solid #ececec; position:relative;
+  }
+  .service-card ul li:first-child{border-top:none;}
+  .service-card ul li::before{content:"—"; position:absolute; left:0; color:var(--gold); font-size:12px;}
+
+  .sub-banner{
+    margin-top:1px; background:linear-gradient(135deg, #0d1d31 0%, #12273f 100%); display:flex; align-items:center; justify-content:space-between;
+    gap:30px; padding:38px 42px; flex-wrap:wrap; border-radius:0;
+    box-shadow:0 18px 32px rgba(10,14,20,0.14);
+  }
+  .sub-banner-text{display:flex; align-items:flex-start; gap:20px; max-width:640px;}
+  .sub-banner-text svg{flex:0 0 auto; width:44px; height:44px;}
+  .sub-banner-text h3{color:var(--white); font-size:19px; font-weight:700; margin-bottom:8px;}
+  .sub-banner-text p{color:rgba(255,255,255,0.65); font-size:14.5px; line-height:1.6;}
+  .sub-banner .btn-ghost{white-space:nowrap;}
+
+  /* ---------- Gallery ---------- */
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px;
+  }
+  @media (max-width:900px){ .gallery-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .gallery-grid{grid-template-columns:1fr;} }
+  .gallery-item{
+    position:relative; overflow:hidden; aspect-ratio:4/5; background:var(--navy);
+  }
+  .gallery-item img{
+    width:100%; height:100%; object-fit:cover; display:block;
+    filter:saturate(0.92) contrast(1.03);
+    transition:transform .6s cubic-bezier(.2,.8,.2,1), filter .4s ease;
+  }
+  .gallery-item:hover img{transform:scale(1.06);}
+  .gallery-item::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(11,37,69,0) 45%, rgba(7,24,41,0.88) 100%);
+  }
+  .gallery-cap{
+    position:absolute; left:16px; right:16px; bottom:14px; z-index:2;
+    color:var(--white);
+  }
+  .gallery-cap .eyebrow{color:var(--gold); font-size:10.5px; margin-bottom:4px;}
+  .gallery-cap h4{font-size:15.5px; font-weight:700;}
+  .gallery-credit{margin-top:26px; text-align:right; font-size:11px; color:#9aa4b0;}
+  .gallery-credit a{color:#9aa4b0; text-decoration:underline;}
+  .gallery-item{cursor:zoom-in;}
+
+  /* ---------- Lightbox ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:300; background:rgba(7,24,41,0.94);
+    display:flex; align-items:center; justify-content:center; padding:40px;
+    opacity:0; pointer-events:none; transition:opacity .3s ease;
+  }
+  .lightbox.open{opacity:1; pointer-events:auto;}
+  .lightbox img{max-width:min(90vw,900px); max-height:75vh; object-fit:contain; border:1px solid var(--gold);}
+  .lightbox-cap{position:absolute; bottom:36px; left:0; right:0; text-align:center; color:var(--gold); font-size:13px; letter-spacing:0.08em; text-transform:uppercase;}
+  .lightbox-close{position:absolute; top:26px; right:32px; color:var(--white); font-size:30px; background:none; border:none; cursor:pointer;}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--mist);}
+  .faq-list{max-width:760px;}
+  .faq-item{border-bottom:1px solid #e2ded4;}
+  .faq-item:first-child{border-top:1px solid #e2ded4;}
+  .faq-q{
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+    padding:22px 4px; cursor:pointer; font-family:'Montserrat'; font-weight:700; font-size:16px; color:var(--navy);
+  }
+  .faq-q .plus{
+    flex:0 0 auto; width:24px; height:24px; border:1px solid var(--gold); border-radius:50%; position:relative; transition:transform .3s ease;
+  }
+  .faq-q .plus::before, .faq-q .plus::after{content:""; position:absolute; background:var(--gold);}
+  .faq-q .plus::before{left:6px; right:6px; top:50%; height:1.4px; transform:translateY(-50%);}
+  .faq-q .plus::after{top:6px; bottom:6px; left:50%; width:1.4px; transform:translateX(-50%); transition:opacity .25s ease;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .35s ease;}
+  .faq-item.open .faq-a{max-height:200px;}
+  .faq-a p{padding:0 4px 22px; font-size:14.5px; color:#5b6472; line-height:1.7; max-width:640px;}
+
+  /* ---------- Why choose ---------- */
+  .why{display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:center;}
+  @media (max-width:900px){ .why{grid-template-columns:1fr;} }
+  .why-visual{
+    position:relative; background:var(--navy); min-height:420px; padding:46px;
+    display:flex; flex-direction:column; justify-content:flex-end; overflow:hidden;
+  }
+  .why-visual .quote-mark{
+    font-family:'Montserrat'; font-size:130px; color:rgba(212,175,55,0.28); line-height:1; font-weight:800;
+  }
+  .why-visual p{
+    color:var(--white); font-size:22px; font-weight:600; line-height:1.5; font-family:'Montserrat'; max-width:380px;
+  }
+  .why-visual .tag{color:var(--gold); font-size:12px; letter-spacing:0.2em; text-transform:uppercase; margin-top:22px;}
+  .why-list{display:grid; gap:4px;}
+  .why-item{
+    display:flex; gap:18px; align-items:flex-start; padding:20px 0; border-bottom:1px solid #ececec;
+  }
+  .why-item:last-child{border-bottom:none;}
+  .check{
+    flex:0 0 auto; width:26px; height:26px; border:1.5px solid var(--gold); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; color:var(--gold); margin-top:2px;
+  }
+  .check svg{width:12px; height:12px; display:block;}
+  .check svg path{stroke:currentColor; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round;}
+  .why-item h4{font-size:16.5px; font-weight:700; color:var(--navy); margin-bottom:4px;}
+  .why-item p{font-size:14.5px; color:#5b6472; line-height:1.6;}
+
+  /* ---------- How it works ---------- */
+  .process{background:var(--navy-deep); position:relative;}
+  .process .section-head h2{color:var(--white);}
+  .process .section-head p{color:rgba(255,255,255,0.6);}
+  .process-row{display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative;}
+  @media (max-width:900px){ .process-row{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .process-row{grid-template-columns:1fr;} }
+  .process-row::before{
+    content:""; position:absolute; top:26px; left:6%; right:6%; height:1px;
+    background:repeating-linear-gradient(90deg, rgba(212,175,55,0.5) 0 8px, transparent 8px 16px);
+  }
+  @media (max-width:900px){ .process-row::before{display:none;} }
+  .process-step{position:relative; padding:0 26px 0 0;}
+  .p-num{
+    font-family:'Montserrat'; font-weight:800; font-size:15px; color:var(--navy-deep); background:var(--gold);
+    width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    position:relative; z-index:2; margin-bottom:26px;
+  }
+  .process-step h4{color:var(--white); font-size:18px; font-weight:700; margin-bottom:10px;}
+  .process-step p{color:rgba(255,255,255,0.58); font-size:14.5px; line-height:1.65;}
+
+  /* ---------- About ---------- */
+  .about{display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center;}
+  @media (max-width:900px){ .about{grid-template-columns:1fr;} }
+  .about-copy p{font-size:16.5px; line-height:1.85; color:#43505f;}
+  .about-copy .section-head{margin-bottom:26px;}
+  .about-badges{display:flex; gap:0; margin-top:38px; border-top:1px solid #ececec;}
+  .about-badges div{flex:1; padding:22px 18px 0; border-right:1px solid #ececec;}
+  .about-badges div:last-child{border-right:none;}
+  .about-badges .num{font-family:'Montserrat'; font-weight:800; font-size:28px; color:var(--navy);}
+  .about-badges .lab{font-size:12.5px; color:#7a8494; margin-top:4px;}
+  .about-frame{
+    position:relative; aspect-ratio:4/5; background:var(--navy);
+    display:flex; align-items:flex-end; justify-content:flex-start; overflow:hidden;
+    border-radius:20px; box-shadow:0 28px 60px rgba(11,17,30,0.18);
+  }
+  .about-frame img{width:100%; height:100%; object-fit:cover; position:absolute; inset:0; filter:saturate(1.08) contrast(1.04);}
+  .about-frame .tint{position:absolute; inset:0; background:linear-gradient(180deg, rgba(11,37,69,0.15) 0%, rgba(7,24,41,0.75) 100%);}
+  .about-frame .badge{position:relative; z-index:2; margin:0 0 24px 24px; display:flex; align-items:center; gap:10px;}
+  .about-frame .badge svg, .about-frame .badge img{width:34px; height:auto;}
+  .about-frame .badge span{color:var(--white); font-family:'Montserrat'; font-weight:700; font-size:13px; letter-spacing:0.08em;}
+  .about-frame .sweep{
+    position:absolute; inset:0; z-index:3;
+    background:linear-gradient(115deg, transparent 40%, rgba(212,175,55,0.35) 50%, transparent 60%);
+    transform:translateX(-140%);
+  }
+  .about-frame.in-view .sweep{animation:wipe 1.4s ease-out forwards;}
+
+  /* ---------- Service area map strip ---------- */
+  .locale{background:var(--mist); text-align:center;}
+  .locale .eyebrow{justify-content:center; display:flex; gap:10px; margin-bottom:16px;}
+  .locale h2{font-size:clamp(24px,3vw,34px); font-weight:800; color:var(--navy); max-width:720px; margin:0 auto;}
+  .locale p{color:#5b6472; margin-top:16px; max-width:560px; margin-left:auto; margin-right:auto;}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--navy-deep); color:var(--white);}
+  .contact-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:70px;}
+  @media (max-width:960px){ .contact-grid{grid-template-columns:1fr;} }
+  .contact .section-head h2{color:var(--white);}
+  .contact .section-head p{color:rgba(255,255,255,0.6);}
+  .info-block{display:flex; gap:16px; padding:20px 0; border-bottom:1px solid rgba(255,255,255,0.1);}
+  .info-block:first-of-type{border-top:1px solid rgba(255,255,255,0.1);}
+  .info-block .ic{color:var(--gold); font-size:18px; flex:0 0 auto; width:24px;}
+  .info-block h5{font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:6px;}
+  .info-block p, .info-block a{font-size:15px; color:rgba(255,255,255,0.82); line-height:1.6;}
+  .map-frame{margin-top:26px; border:1px solid rgba(255,255,255,0.15); overflow:hidden; filter:grayscale(0.15) contrast(1.05);}
+  .map-frame iframe{width:100%; height:220px; border:0; display:block;}
+
+  form{display:grid; gap:18px;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  @media (max-width:560px){ .form-row{grid-template-columns:1fr;} }
+  .field{display:flex; flex-direction:column; gap:8px;}
+  .field label{font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.55);}
+  .field input, .field select, .field textarea{
+    background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.18); color:var(--white);
+    padding:13px 14px; font-family:'Inter'; font-size:14.5px; border-radius:2px; transition:border-color .25s ease;
+  }
+  .field input::placeholder, .field textarea::placeholder{color:rgba(255,255,255,0.35);}
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none; border-color:var(--gold);}
+  .field select option{background:var(--navy-deep); color:var(--white);}
+  textarea{resize:vertical; min-height:96px;}
+  .form-foot{display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:6px;}
+  .form-note{font-size:12.5px; color:rgba(255,255,255,0.45); max-width:280px;}
+  .form-status{font-size:13px; color:var(--gold); min-height:18px;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy-deep); border-top:1px solid rgba(255,255,255,0.08); padding:50px 0 26px;}
+  .foot-top{display:flex; justify-content:space-between; align-items:flex-start; gap:40px; flex-wrap:wrap; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,0.08);}
+  .foot-brand{display:flex; align-items:center; gap:10px;}
+  .foot-brand svg, .foot-brand img{height:30px; width:auto;}
+  .foot-brand span{color:var(--white); font-weight:800; font-family:'Montserrat'; font-size:16px;}
+  .foot-tagline{color:rgba(255,255,255,0.45); font-size:13px; margin-top:10px; letter-spacing:0.04em;}
+  .foot-links{display:flex; gap:64px; flex-wrap:wrap;}
+  .foot-links h6{color:var(--gold); font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; margin-bottom:16px;}
+  .foot-links a, .foot-links p{display:block; color:rgba(255,255,255,0.55); font-size:14px; margin-bottom:10px;}
+  .foot-links a:hover{color:var(--gold);}
+  .foot-bottom{display:flex; justify-content:space-between; padding-top:22px; flex-wrap:wrap; gap:10px;}
+  .foot-bottom p{color:rgba(255,255,255,0.35); font-size:12.5px;}
+
+  /* reveal-on-scroll */
+  .rv{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  .rv.in{opacity:1; transform:translateY(0);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  ::selection{background:var(--gold); color:var(--navy-deep);}
+  :focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  /* Refined Scandinavian corporate visual system */
+  :root{
+    --surface:#101b2a;
+    --surface-raised:#162438;
+    --surface-soft:#1b2b40;
+    --surface-border:rgba(255,255,255,0.1);
+    --copy:#aeb9c7;
+    --heading:#edf1f5;
+    --gold:#c9a84e;
+    --gold-light:#e2c878;
+  }
+  body[data-theme="light"]{
+    --surface:#f4f6f8;
+    --surface-raised:#ffffff;
+    --surface-soft:#edf1f5;
+    --surface-border:rgba(18,35,61,0.1);
+    --copy:#566476;
+    --heading:#12233d;
+    --gold:#b28c32;
+    --gold-light:#dec36d;
+  }
+  html{scroll-padding-top:90px;}
+  body{background:var(--surface); color:var(--copy);}
+  section{padding:clamp(76px,8vw,108px) 0;}
+  .eyebrow{letter-spacing:0.2em; font-size:11px;}
+  .section-head{margin-bottom:48px;}
+  .section-head h2,.locale h2{color:var(--heading); letter-spacing:-0.035em; font-weight:700;}
+  .section-head p,.locale p{color:var(--copy);}
+  .section-head .eyebrow .rule{background:var(--gold);}
+
+  header{padding:18px 0;}
+  header.solid{box-shadow:0 8px 28px rgba(5,13,24,0.12); backdrop-filter:blur(16px);}
+  .brand .name{letter-spacing:0.045em;}
+  nav.links{gap:clamp(16px,2.2vw,30px);}
+  nav.links a{font-size:12px; letter-spacing:0.045em;}
+  .header-cta{border-radius:7px;}
+  .theme-toggle,.lang-switch{backdrop-filter:blur(8px);}
+  body[data-theme="light"] header:not(.solid) .brand .name,
+  body[data-theme="light"] header:not(.solid) nav.links a,
+  body[data-theme="light"] header:not(.solid) .burger span,
+  body[data-theme="light"] header:not(.solid) .theme-toggle,
+  body[data-theme="light"] header:not(.solid) .lang-switch{
+    color:#fff;
+  }
+  body[data-theme="light"] header:not(.solid) .theme-toggle,
+  body[data-theme="light"] header:not(.solid) .lang-switch{
+    background:rgba(7,18,34,0.24); border-color:rgba(255,255,255,0.28);
+  }
+  body[data-theme="light"] header.solid .brand .name,
+  body[data-theme="light"] header.solid nav.links a,
+  body[data-theme="light"] header.solid .burger span,
+  body[data-theme="light"] header.solid .theme-toggle,
+  body[data-theme="light"] header.solid .lang-switch{color:var(--navy);}
+
+  .hero{
+    min-height:min(900px,100svh);
+    background-image:
+      linear-gradient(100deg,rgba(8,20,36,0.88) 0%,rgba(8,20,36,0.70) 54%,rgba(8,20,36,0.56) 100%),
+      url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2000&q=85');
+    background-position:center, center 48%;
+  }
+  .hero h1{font-weight:700; letter-spacing:-0.045em; line-height:1.04;}
+  .hero p.lede{max-width:520px; color:rgba(255,255,255,0.8);}
+  .hero-stats{gap:28px; margin-top:42px;}
+  .hero-stats .num{font-size:24px;}
+  .hero-stats .label{letter-spacing:0.025em;}
+  .quote-card{
+    border:1px solid rgba(255,255,255,0.18); border-radius:16px;
+    background:rgba(13,27,45,0.82); box-shadow:0 30px 70px rgba(0,0,0,0.26);
+  }
+  .quote-card::before,.quote-card::after{width:18px; height:18px; border-color:var(--gold);}
+  .quote-card .field input,.quote-card .field select{border-radius:7px; background:rgba(255,255,255,0.08);}
+  .quote-card .btn-primary{border-radius:7px;}
+  .btn-primary,.btn-ghost{border-radius:7px;}
+  .strip{background:#d8c386; padding:11px 0;}
+  .strip span{font-size:11px; letter-spacing:0.11em;}
+
+  #services,.faq,.locale{background:var(--surface);}
+  #gallery,#why,#about{background:var(--surface-raised);}
+  .service-grid{
+    gap:14px; border:0; background:transparent;
+  }
+  .service-card{
+    min-height:250px; border:1px solid var(--surface-border); border-radius:12px;
+    background:var(--surface-raised); padding:34px 30px;
+    box-shadow:0 10px 28px rgba(8,20,36,0.035);
+  }
+  .service-card:hover{
+    background:var(--surface-raised); transform:translateY(-4px);
+    box-shadow:0 18px 38px rgba(8,20,36,0.1);
+  }
+  .service-card h3{color:var(--heading); letter-spacing:-0.02em; font-size:18px;}
+  .service-card ul li{color:var(--copy); border-color:var(--surface-border);}
+  .sub-banner{border-radius:12px; padding:36px 38px; box-shadow:none;}
+  .sub-banner .btn-ghost{border-color:rgba(255,255,255,0.32);}
+
+  .gallery-grid{gap:16px;}
+  .gallery-item{border-radius:12px; box-shadow:0 14px 34px rgba(8,20,36,0.12);}
+  .gallery-item img{filter:saturate(0.82) contrast(1.04);}
+  .gallery-item::after{background:linear-gradient(180deg,rgba(7,18,34,0.02) 24%,rgba(7,18,34,0.82) 100%);}
+  .gallery-cap h4{font-size:14px; line-height:1.45;}
+  .gallery-credit{color:var(--copy);}
+  .gallery-credit a{color:var(--heading);}
+
+  .why{gap:clamp(40px,6vw,70px);}
+  .why-visual{
+    border-radius:14px; min-height:390px; padding:clamp(30px,4vw,46px);
+    background:linear-gradient(145deg,rgba(13,29,49,0.9),rgba(13,29,49,0.98)),
+      url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80') center/cover;
+  }
+  .why-visual p{font-weight:600; letter-spacing:-0.025em;}
+  .why-item{border-color:var(--surface-border); padding:18px 0;}
+  .why-item h4{color:var(--heading); font-size:15.5px;}
+  .why-item p{color:var(--copy);}
+
+  .process{background:#0d1929;}
+  .process .section-head h2{color:#f3f5f7;}
+  .process .section-head p{color:#aeb9c7;}
+  .process-row{gap:20px;}
+  .process-row::before{display:none;}
+  .process-step{
+    min-height:210px; padding:24px 22px; border:1px solid rgba(255,255,255,0.1);
+    border-radius:12px; background:rgba(255,255,255,0.035);
+  }
+  .p-num{
+    width:44px; height:44px; margin-bottom:22px; border:1px solid rgba(201,168,78,0.45);
+    background:rgba(201,168,78,0.12); color:var(--gold-light); font-size:13px;
+  }
+  .process-step h4{font-size:16px;}
+  .process-step p{color:#aeb9c7;}
+
+  .about{gap:clamp(40px,7vw,84px);}
+  .about-photo-grid{
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:12px;
+    min-width:0; align-items:stretch;
+  }
+  .about-frame{border-radius:14px; box-shadow:0 24px 54px rgba(8,20,36,0.16);}
+  .about-photo-grid .about-frame{height:100%; min-height:360px; aspect-ratio:auto;}
+  .about-photo-stack{display:grid; grid-template-rows:1fr 1fr; gap:12px; min-width:0;}
+  .about-photo-detail{
+    position:relative; overflow:hidden; min-height:170px; aspect-ratio:1.12;
+    margin:0; border:1px solid var(--surface-border); border-radius:12px; background:var(--surface-soft);
+  }
+  .about-photo-detail img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+    transition:transform .5s ease;
+  }
+  .about-photo-detail:hover img{transform:scale(1.04);}
+  .about-photo-detail::after{
+    content:""; position:absolute; inset:35% 0 0;
+    background:linear-gradient(transparent,rgba(7,18,34,0.78));
+  }
+  .about-photo-caption{
+    position:absolute; z-index:1; left:14px; right:12px; bottom:13px;
+    color:#fff; font-size:12px; line-height:1.4; font-weight:600;
+  }
+  .about-frame .tint{background:linear-gradient(180deg,rgba(11,25,42,0.02) 25%,rgba(7,24,41,0.62) 100%);}
+  .about-copy p{color:var(--copy); font-size:16px;}
+  .about-copy .about-supporting{margin-top:16px; font-size:14.5px; color:var(--copy);}
+  .about-badges{border-color:var(--surface-border);}
+  .about-badges div{border-color:var(--surface-border);}
+  .about-badges .num{color:var(--heading);}
+  .about-badges .lab{color:var(--copy);}
+  .locale{border-top:1px solid var(--surface-border); border-bottom:1px solid var(--surface-border);}
+  .locale h2{max-width:760px; margin:0 auto;}
+
+  .faq-list{max-width:850px;}
+  .faq-item,.faq-item:first-child{border-color:var(--surface-border);}
+  .faq-q{color:var(--heading); font-size:15px; padding:23px 4px;}
+  .faq-a p{color:var(--copy);}
+  .contact{background:#0d1929;}
+  .contact .section-head h2{color:#f3f5f7;}
+  .contact .section-head p{color:#aeb9c7;}
+  .info-block{border-color:rgba(255,255,255,0.12);}
+  form#quoteForm{
+    padding:clamp(22px,3vw,36px); border:1px solid rgba(255,255,255,0.12);
+    border-radius:14px; background:rgba(255,255,255,0.035);
+  }
+  .field input,.field select,.field textarea{border-radius:7px;}
+  .form-foot .btn-primary{border-radius:7px;}
+  .map-frame{border-radius:10px;}
+  footer{background:#091321;}
+  .foot-links a,.foot-links p{color:#aeb9c7;}
+  .foot-tagline{color:#aeb9c7;}
+
+  body[data-theme="light"] .service-card{background:#fff; box-shadow:0 10px 28px rgba(18,35,61,0.045);}
+  body[data-theme="light"] .service-card:hover{background:#fff; box-shadow:0 18px 38px rgba(18,35,61,0.1);}
+  body[data-theme="light"] .process{background:#12233d;}
+  body[data-theme="light"] .contact{background:#12233d;}
+  body[data-theme="light"] .process .p-num{color:#b28c32;}
+
+  @media (max-width:960px){
+    .hero{min-height:auto; padding-top:138px; padding-bottom:76px;}
+    .hero-grid{gap:42px;}
+    .hero-mark{margin-top:4px;}
+    .quote-card{max-width:520px;}
+    .process-step{min-height:190px;}
+    .about-photo-grid{max-width:680px; width:100%; margin:0 auto;}
+  }
+  @media (max-width:640px){
+    section{padding:76px 0;}
+    .hero{padding-top:116px; padding-bottom:64px; background-position:center, 56% center;}
+    .hero-grid{gap:34px;}
+    .hero-stats{gap:22px; margin-top:32px;}
+    .hero-stats .num{font-size:21px;}
+    .hero-stats .label{font-size:10.5px;}
+    .quote-card{padding:26px 22px;}
+    .section-head{margin-bottom:34px;}
+    .service-grid{gap:10px;}
+    .service-card{min-height:0; padding:28px 24px;}
+    .service-icon{width:44px; height:44px; margin-bottom:18px;}
+    .sub-banner{padding:28px 24px;}
+    .sub-banner-text{gap:14px;}
+    .gallery-grid{gap:12px;}
+    .gallery-item{aspect-ratio:4/3;}
+    .why-visual{min-height:300px;}
+    .process-row{grid-template-columns:1fr; gap:12px;}
+    .process-step{min-height:0; padding:22px;}
+    .about-badges div{padding-left:10px; padding-right:10px;}
+    .about-badges .num{font-size:22px;}
+    .about-photo-grid{grid-template-columns:1.05fr 0.95fr; gap:9px;}
+    .about-photo-grid .about-frame{min-height:290px;}
+    .about-photo-stack{gap:9px;}
+    .about-photo-detail{min-height:0; border-radius:9px;}
+    .about-photo-caption{left:9px; right:8px; bottom:9px; font-size:10px;}
+    .about-frame .badge{margin:0 0 12px 12px; gap:6px;}
+    .about-frame .badge img{width:24px;}
+    .about-frame .badge span{font-size:9px; letter-spacing:0.04em; white-space:nowrap;}
+    form#quoteForm{padding:22px 18px;}
+    .foot-links{gap:28px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .strip .track{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="img/rp-mark.png" alt="RenPointt Service mark">
+      <span class="name">REN<span>POINTT</span></span>
+    </a>
+    <nav class="links">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#why" data-i18n="nav.why">Why Us</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme" type="button">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4.2"></circle>
+      <g stroke-linecap="round">
+        <line x1="12" y1="1.8" x2="12" y2="4.3"></line>
+        <line x1="12" y1="19.7" x2="12" y2="22.2"></line>
+        <line x1="4.3" y1="4.3" x2="6.1" y2="6.1"></line>
+        <line x1="17.9" y1="17.9" x2="19.7" y2="19.7"></line>
+        <line x1="1.8" y1="12" x2="4.3" y2="12"></line>
+        <line x1="19.7" y1="12" x2="22.2" y2="12"></line>
+        <line x1="4.3" y1="19.7" x2="6.1" y2="17.9"></line>
+        <line x1="17.9" y1="6.1" x2="19.7" y2="4.3"></line>
+      </g>
+    </svg>
+  </button>
+      <select class="lang-switch" id="langSelect" aria-label="Language selector">
+        <option value="en">EN</option>
+        <option value="sv">SV</option>
+      </select>
+    </div>
+    <a href="#contact" class="header-cta" data-i18n="nav.quote">Get a Quote</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M6 6l12 12M18 6L6 18"></path>
+    </svg>
+  </button>
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+  <a href="#why" data-i18n="nav.why">Why Us</a>
+  <a href="#process" data-i18n="nav.process">Process</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<div id="top"></div>
+<section class="hero">
+  <div class="shine-wipe"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-eyebrow"><span class="rule"></span><span class="spark"></span> STOCKHOLM &amp; SURROUNDING AREAS</div>
+      <h1>
+        <span class="reveal"><span data-i18n="hero.title1">Precision in</span></span>
+        <span class="reveal"><span data-i18n="hero.title2">every clean.</span></span>
+      </h1>
+      <p class="lede" data-i18n="hero.lede">RenPointt Service delivers dependable residential, commercial and subcontracted cleaning across Stockholm — professional, efficient, and finished to a standard you can see.</p>
+      <p style="color:var(--gold); font-size:13px; letter-spacing:0.12em; text-transform:uppercase; font-weight:600; margin-top:16px;" data-i18n="hero.tagline">Professional Cleaning. Reliable Service.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" data-i18n="hero.primaryBtn">Request a free quote</a>
+        <a href="#services" class="btn-ghost" data-i18n="hero.secondaryBtn">Explore services</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="num">5</div><div class="label" data-i18n="hero.stat1">Service types</div></div>
+        <div><div class="num">6</div><div class="label" data-i18n="hero.stat2">Days a week</div></div>
+        <div><div class="num">1 day</div><div class="label" data-i18n="hero.stat3">Typical quote response</div></div>
+      </div>
+    </div>
+    <div class="hero-mark">
+      <div class="quote-card">
+        <div class="quote-card-head">
+          <img src="img/rp-mark.png" alt="RenPointt mark">
+          <div><h3 data-i18n="quote.title">Get a fast quote</h3><span data-i18n="quote.subtitle">Reply within 1 business day</span></div>
+        </div>
+        <form id="heroQuoteForm">
+          <div class="field"><label for="hqName" data-i18n="form.name">Name</label><input id="hqName" name="name" type="text" data-placeholder="form.namePlaceholder" placeholder="Your name" required></div>
+          <div class="field"><label for="hqPhone" data-i18n="form.phone">Mobile number</label><input id="hqPhone" name="phone" type="tel" data-placeholder="form.phonePlaceholder" placeholder="+46 ..." required></div>
+          <div class="field">
+            <label for="hqService" data-i18n="form.service">Service</label>
+            <select id="hqService" name="service" required>
+              <option value="" disabled selected data-i18n="form.servicePlaceholder">Choose a service</option>
+              <option data-i18n="service.residential">Residential Cleaning</option>
+              <option data-i18n="service.commercial">Commercial Cleaning</option>
+              <option data-i18n="service.windows">Window Cleaning</option>
+              <option data-i18n="service.moveout">Move‑In / Move‑Out</option>
+              <option data-i18n="service.subcontracting">Subcontracting Services</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary" data-i18n="quote.button">Get a quote</button>
+        </form>
+        <div class="quote-card-note" data-i18n="quote.note">No obligation — just a straight answer on price and timing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="track">
+    <span><span class="spark"></span> <span data-i18n="strip.residential">Residential Cleaning</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.commercial">Commercial Cleaning</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.moveout">Move-In / Move-Out</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.subcontracting">Subcontracting Staff</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.windows">Window Cleaning</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.residential">Residential Cleaning</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.commercial">Commercial Cleaning</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.moveout">Move-In / Move-Out</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.subcontracting">Subcontracting Staff</span></span>
+    <span><span class="spark"></span> <span data-i18n="strip.windows">Window Cleaning</span></span>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head rv">
+      <div class="eyebrow"><span class="rule"></span><span data-i18n="services.heading">OUR SERVICES</span></div>
+      <h2 data-i18n="services.title">One trusted team for every space.</h2>
+      <p data-i18n="services.text">From a single flat to a full commercial portfolio — and cleaning companies who need trained hands on short notice.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding-left:0; padding-right:0; max-width:1180px;">
+    <div class="service-grid rv">
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><path d="M10 40 V20 h10 v20 M24 40 V10 h10 v30 M4 40 h40"/><path d="M38 12 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 Z" fill="#D4AF37" stroke="none"/></svg>
+        <h3 data-i18n="services.card1">Residential Cleaning</h3>
+        <ul>
+          <li data-i18n="services.item.regular">Regular cleaning</li>
+          <li data-i18n="services.item.deep">Deep cleaning</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><rect x="8" y="6" width="26" height="36" rx="1"/><path d="M14 14h4M22 14h4M14 22h4M22 22h4M14 30h4M22 30h4"/><path d="M34 42V22h6v20"/></svg>
+        <h3 data-i18n="services.card2">Commercial Cleaning</h3>
+        <ul>
+          <li data-i18n="services.item.office">Office cleaning</li>
+          <li data-i18n="services.item.retail">Retail cleaning</li>
+          <li data-i18n="services.item.stairwell">Stairwell cleaning</li>
+          <li data-i18n="services.item.common">Common area cleaning</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><rect x="10" y="6" width="28" height="36" rx="1"/><path d="M24 6v36M10 24h28"/></svg>
+        <h3 data-i18n="services.card3">Window Cleaning</h3>
+        <ul>
+          <li data-i18n="services.item.interior">Interior &amp; exterior glass</li>
+          <li data-i18n="services.item.streak">Streak-free finish</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><rect x="10" y="16" width="22" height="20" rx="1"/><path d="M16 16v-4h10v4"/><path d="M32 22h6l4 6v8h-10"/><circle cx="18" cy="38" r="3" fill="#D4AF37" stroke="none"/><circle cx="34" cy="38" r="3" fill="#D4AF37" stroke="none"/></svg>
+        <h3 data-i18n="services.card4">Move-In / Move-Out</h3>
+        <ul>
+          <li data-i18n="services.item.turnover">Full property turnover clean</li>
+          <li data-i18n="services.item.tenancy">End-of-tenancy ready</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-banner rv">
+      <div class="sub-banner-text">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#D4AF37" stroke-width="1.6"><circle cx="17" cy="14" r="5"/><path d="M8 38 v-6 a9 9 0 0 1 18 0 v6"/><circle cx="33" cy="16" r="4.2"/><path d="M27 38 v-5 a8 8 0 0 1 13 -6"/></svg>
+        <div>
+          <h3 data-i18n="services.subTitle">Subcontracting Services</h3>
+          <p data-i18n="services.subText">We provide professional cleaning staff and subcontracting services for cleaning companies — flexible, trained hands whenever you need extra coverage.</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn-ghost" data-i18n="services.subBtn">Discuss subcontracting</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head rv">
+      <div class="eyebrow"><span class="rule"></span><span data-i18n="gallery.heading">OUR WORK</span></div>
+      <h2 data-i18n="gallery.title">What precision looks like on the job.</h2>
+      <p data-i18n="gallery.text">A look at the four services we're called for most across Stockholm.</p>
+    </div>
+    <div class="gallery-grid rv">
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/8055825/pexels-photo-8055825.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cleaner tidying a bright residential living room" loading="lazy">
+        <div class="gallery-cap"><div class="eyebrow" data-i18n="gallery.residential">RESIDENTIAL</div><h4 data-i18n="gallery.residentialCap">Homes, refreshed room by room</h4></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Uniformed cleaning team wiping down a commercial space" loading="lazy">
+        <div class="gallery-cap"><div class="eyebrow" data-i18n="gallery.commercial">COMMERCIAL</div><h4 data-i18n="gallery.commercialCap">Offices &amp; retail, ready for business</h4></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/34668154/pexels-photo-34668154.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Window cleaners on a suspended platform on a glass building facade" loading="lazy">
+        <div class="gallery-cap"><div class="eyebrow" data-i18n="gallery.windows">WINDOWS</div><h4 data-i18n="gallery.windowsCap">Streak-free glass, inside &amp; out</h4></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/4246119/pexels-photo-4246119.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Empty apartment staged with moving boxes, ready for a turnover clean" loading="lazy">
+        <div class="gallery-cap"><div class="eyebrow" data-i18n="gallery.moveout">MOVE-IN / OUT</div><h4 data-i18n="gallery.moveoutCap">Turnover-ready, top to bottom</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section id="why">
+  <div class="wrap why rv">
+    <div class="why-visual">
+      <div class="quote-mark">”</div>
+      <p data-i18n="why.quote">Precision in every clean — it's not a slogan, it's the checklist we run on every job.</p>
+    </div>
+    <div>
+      <div class="section-head" style="margin-bottom:26px;">
+        <div class="eyebrow"><span class="rule"></span><span data-i18n="why.eyebrow">WHY CHOOSE RENPOINTT</span></div>
+        <h2 data-i18n="why.title">Reliability you can schedule around.</h2>
+      </div>
+      <div class="why-list">
+        <div class="why-item"><div class="check"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"></path></svg></div><div><h4 data-i18n="why.item1">Professional and reliable team</h4><p data-i18n="why.item1p">Trained staff who show up and finish the job right.</p></div></div>
+        <div class="why-item"><div class="check"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"></path></svg></div><div><h4 data-i18n="why.item2">Flexible scheduling</h4><p data-i18n="why.item2p">Regular visits or one-off jobs, fitted around you.</p></div></div>
+        <div class="why-item"><div class="check"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"></path></svg></div><div><h4 data-i18n="why.item3">Affordable pricing</h4><p data-i18n="why.item3p">Transparent quotes with no hidden costs.</p></div></div>
+        <div class="why-item"><div class="check"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"></path></svg></div><div><h4 data-i18n="why.item4">High-quality cleaning standards</h4><p data-i18n="why.item4p">Consistent results, job after job.</p></div></div>
+        <div class="why-item"><div class="check"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"></path></svg></div><div><h4 data-i18n="why.item5">Fully customer-focused</h4><p data-i18n="why.item5p">We listen first, then clean to your standard.</p></div></div>
+        <div class="why-item"><div class="check"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"></path></svg></div><div><h4 data-i18n="why.item6">Serving Stockholm and surrounding areas</h4><p data-i18n="why.item6p">Local, responsive, and easy to reach.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head rv">
+      <div class="eyebrow"><span class="rule"></span><span data-i18n="process.eyebrow">HOW IT WORKS</span></div>
+      <h2 data-i18n="process.title">Four steps from first message to spotless.</h2>
+    </div>
+    <div class="process-row rv">
+      <div class="process-step"><div class="p-num">01</div><h4 data-i18n="process.step1">Contact us</h4><p data-i18n="process.step1p">Tell us what service you need and where.</p></div>
+      <div class="process-step"><div class="p-num">02</div><h4 data-i18n="process.step2">Free quote</h4><p data-i18n="process.step2p">Receive a transparent, no-obligation quotation.</p></div>
+      <div class="process-step"><div class="p-num">03</div><h4 data-i18n="process.step3">Book your service</h4><p data-i18n="process.step3p">Choose a convenient date and time.</p></div>
+      <div class="process-step"><div class="p-num">04</div><h4 data-i18n="process.step4">We get the job done</h4><p data-i18n="process.step4p">Professional service with attention to every detail.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about">
+    <div class="about-photo-grid">
+      <div class="about-frame rv" id="aboutFrame">
+        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1400&q=80" alt="Cleaner carefully cleaning a bright modern home" loading="lazy" decoding="async">
+        <div class="tint"></div>
+        <div class="sweep"></div>
+        <div class="badge">
+          <img src="img/rp-mark.png" alt="RenPointt mark">
+          <span>RENPOINTT SERVICE</span>
+        </div>
+      </div>
+      <div class="about-photo-stack">
+        <figure class="about-photo-detail rv">
+          <img src="https://images.pexels.com/photos/8055825/pexels-photo-8055825.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cleaning team caring for a residential living room" loading="lazy" decoding="async">
+          <figcaption class="about-photo-caption" data-i18n="gallery.residentialCap">Homes, refreshed room by room</figcaption>
+        </figure>
+        <figure class="about-photo-detail rv">
+          <img src="https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional cleaner maintaining a commercial space" loading="lazy" decoding="async">
+          <figcaption class="about-photo-caption" data-i18n="gallery.commercialCap">Offices &amp; retail, ready for business</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="about-copy rv">
+      <div class="section-head">
+        <div class="eyebrow"><span class="rule"></span><span data-i18n="about.heading">ABOUT US</span></div>
+        <h2 data-i18n="about.title">Built on dependable results.</h2>
+      </div>
+      <p data-i18n="about.text">At RenPointt Service, we are committed to delivering dependable cleaning and support services with professionalism, efficiency, and attention to detail. Whether we're serving homeowners, businesses, or working as a subcontractor to other cleaning companies, our goal is to build long-term relationships through outstanding service and reliable results.</p>
+      <p class="about-supporting" data-i18n="about.supporting">Built on experience, consistency, and a strong focus on quality.</p>
+      <div class="about-badges">
+        <div><div class="num" data-i18n="about.monday">Mon–Fri</div><div class="lab" data-i18n="about.hours1">07:00–17:00</div></div>
+        <div><div class="num" data-i18n="about.sat">Sat</div><div class="lab" data-i18n="about.hours2">08:00–15:00</div></div>
+        <div><div class="num" data-i18n="about.se">SE</div><div class="lab" data-i18n="about.location">Stockholm based</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="locale">
+  <div class="wrap rv">
+    <div class="eyebrow"><span class="rule"></span><span data-i18n="locale.heading">SERVICE AREA</span><span class="rule"></span></div>
+    <h2 data-i18n="locale.title">Proudly serving Stockholm and the surrounding municipalities.</h2>
+    <p data-i18n="locale.text">Homes, offices, retail units and stairwells across the region — plus subcontracted crews for cleaning companies who need reliable extra hands.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head rv">
+      <div class="eyebrow"><span class="rule"></span><span data-i18n="faq.heading">YOU MIGHT ASK</span></div>
+      <h2 data-i18n="faq.title">Frequently asked questions.</h2>
+    </div>
+    <div class="faq-list rv">
+      <div class="faq-item open">
+        <div class="faq-q"><span data-i18n="faq.q1">Do you bring your own cleaning supplies and equipment?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq.a1">Yes — our team arrives with professional-grade supplies and equipment as standard, so there's nothing you need to prepare in advance.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq.q2">How quickly can I get a quote?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq.a2">Send your details through the contact form or the quick-quote box in the hero, and we'll come back with a free, transparent quote — usually within one business day.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq.q3">Do you offer one-off cleans or only recurring contracts?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq.a3">Both. Regular weekly or bi-weekly visits, one-off deep cleans, and move-in / move-out jobs are all available, scheduled around you.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq.q4">Can cleaning companies subcontract staff through you?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq.a4">Yes — we provide trained cleaning staff and subcontracting support for other cleaning companies who need reliable extra coverage.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq.q5">What areas do you serve?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq.a5">We're based in Stockholm and serve the surrounding areas. Get in touch with your address and we'll confirm coverage.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <div class="section-head" style="margin-bottom:34px;">
+        <div class="eyebrow"><span class="rule"></span><span data-i18n="contact.eyebrow">GET IN TOUCH</span></div>
+        <h2 data-i18n="contact.heading">Let's plan your clean.</h2>
+        <p data-i18n="contact.subheading">Send your details and we'll come back with a free, transparent quote.</p>
+      </div>
+      <div class="info-block"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s6-4.7 6-11a6 6 0 1 0-12 0c0 6.3 6 11 6 11Z"></path><circle cx="12" cy="10" r="2.4"></circle></svg></div><div><h5 data-i18n="contact.address">Address</h5><p>Skogängsvägen 15 A, 163 49<br>Stockholm, Sweden</p></div></div>
+      <div class="info-block"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z"></path><path d="M5 7l7 5 7-5"></path></svg></div><div><h5 data-i18n="contact.email">Email</h5><a href="mailto:renpointt@gmail.com">renpointt@gmail.com</a></div></div>
+      <div class="info-block"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 4.8h2.2l1.6 5.7-1.5 1.5a12 12 0 0 0 7.4 7.4l1.5-1.5 5.7 1.6v2.2A2.2 2.2 0 0 1 20.3 21 15.7 15.7 0 0 1 4.8 4.8a2.2 2.2 0 0 1 1.8-2Z"></path></svg></div><div><h5 data-i18n="contact.phone">Phone</h5><a href="tel:+46760984690">+46 76 098 46 90</a></div></div>
+      <div class="info-block"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v8l5 3"></path></svg></div><div><h5 data-i18n="contact.hours">Hours</h5><p>Monday–Friday: 07:00–17:00<br>Saturday: 08:00–15:00</p></div></div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Skog%C3%A4ngsv%C3%A4gen%2015A%2C%20163%2049%20Stockholm%2C%20Sweden&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="RenPointt Service location"></iframe>
+      </div>
+    </div>
+
+    <form id="quoteForm" class="rv">
+      <div class="form-row">
+        <div class="field"><label for="fname" data-i18n="contact.formName">Name</label><input id="fname" name="name" type="text" placeholder="Your full name" data-placeholder="form.namePlaceholder" required></div>
+        <div class="field"><label for="fphone" data-i18n="contact.formPhone">Phone number</label><input id="fphone" name="phone" type="tel" placeholder="+46 ..." data-placeholder="form.phonePlaceholder" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="femail" data-i18n="contact.formEmail">Email</label><input id="femail" name="email" type="email" placeholder="you@example.com" data-placeholder="contact.formEmailPlaceholder" required></div>
+        <div class="field"><label for="fservice" data-i18n="contact.formService">Service required</label>
+          <select id="fservice" name="service" required>
+            <option value="" disabled selected data-i18n="form.servicePlaceholder">Select a service</option>
+            <option data-i18n="service.residential">Residential Cleaning</option>
+            <option data-i18n="service.commercial">Commercial Cleaning</option>
+            <option data-i18n="service.subcontracting">Subcontracting Services</option>
+            <option data-i18n="service.other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="faddress" data-i18n="contact.formAddress">Property address</label><input id="faddress" name="address" type="text" placeholder="Street, city" data-placeholder="contact.formAddressPlaceholder"></div>
+        <div class="field"><label for="fdate" data-i18n="contact.formDate">Preferred date</label><input id="fdate" name="date" type="date"></div>
+      </div>
+      <div class="field"><label for="fmore" data-i18n="contact.formMore">Additional information</label><textarea id="fmore" name="more" placeholder="Anything else we should know?" data-placeholder="contact.formMorePlaceholder"></textarea></div>
+      <div class="form-foot">
+        <span class="form-note" data-i18n="contact.formNote">We'll reply with a free, no-obligation quote — usually within one business day.</span>
+        <button type="submit" class="btn-primary" data-i18n="contact.formSubmit">Send request</button>
+      </div>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <img src="img/rp-mark.png" alt="RenPointt mark">
+          <span>RENPOINTT SERVICE</span>
+        </div>
+        <div class="foot-tagline" data-i18n="footer.tagline">Precision in every clean.</div>
+      </div>
+      <div class="foot-links">
+        <div>
+          <h6 data-i18n="footer.services">Services</h6>
+          <a href="#services" data-i18n="service.residential">Residential Cleaning</a>
+          <a href="#services" data-i18n="service.commercial">Commercial Cleaning</a>
+          <a href="#services" data-i18n="service.subcontracting">Subcontracting</a>
+        </div>
+        <div>
+          <h6 data-i18n="footer.company">Company</h6>
+          <a href="#about" data-i18n="nav.about">About us</a>
+          <a href="#process" data-i18n="nav.process">How it works</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div>
+          <h6 data-i18n="footer.contact">Contact</h6>
+          <p>Skogängsvägen 15 A, Stockholm</p>
+          <p>renpointt@gmail.com</p>
+          <p>+46 76 098 46 90</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="year"></span> RenPointt Service. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M6 6l12 12M18 6L6 18"></path>
+    </svg>
+  </button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
+</div>
+
+<script>
+  const translations = {
+    en: {
+      'nav.services': 'Services',
+      'nav.gallery': 'Gallery',
+      'nav.why': 'Why Us',
+      'nav.process': 'Process',
+      'nav.about': 'About',
+      'nav.faq': 'FAQ',
+      'nav.contact': 'Contact',
+      'nav.quote': 'Get a Quote',
+      'hero.title1': 'Precision in',
+      'hero.title2': 'every clean.',
+      'hero.lede': 'RenPointt Service delivers dependable residential, commercial and subcontracted cleaning across Stockholm — professional, efficient, and finished to a standard you can see.',
+      'hero.tagline': 'Professional Cleaning. Reliable Service.',
+      'hero.primaryBtn': 'Request a free quote',
+      'hero.secondaryBtn': 'Explore services',
+      'hero.stat1': 'Service types',
+      'hero.stat2': 'Days a week',
+      'hero.stat3': 'Typical quote response',
+      'quote.title': 'Get a fast quote',
+      'quote.subtitle': 'Reply within 1 business day',
+      'form.name': 'Name',
+      'form.namePlaceholder': 'Your name',
+      'form.phone': 'Mobile number',
+      'form.phonePlaceholder': '+46 ...',
+      'form.service': 'Service',
+      'form.servicePlaceholder': 'Choose a service',
+      'service.residential': 'Residential Cleaning',
+      'service.commercial': 'Commercial Cleaning',
+      'service.windows': 'Window Cleaning',
+      'service.moveout': 'Move-In / Move-Out',
+      'service.subcontracting': 'Subcontracting Services',
+      'quote.button': 'Get a quote',
+      'quote.note': 'No obligation — just a straight answer on price and timing.',
+      'strip.residential': 'Residential Cleaning',
+      'strip.commercial': 'Commercial Cleaning',
+      'strip.moveout': 'Move-In / Move-Out',
+      'strip.subcontracting': 'Subcontracting Staff',
+      'strip.windows': 'Window Cleaning',
+      'services.heading': 'OUR SERVICES',
+      'services.title': 'One trusted team for every space.',
+      'services.text': 'From a single flat to a full commercial portfolio — and cleaning companies who need trained hands on short notice.',
+      'services.card1': 'Residential Cleaning',
+      'services.card2': 'Commercial Cleaning',
+      'services.card3': 'Window Cleaning',
+      'services.card4': 'Move-In / Move-Out',
+      'services.item.regular': 'Regular cleaning',
+      'services.item.deep': 'Deep cleaning',
+      'services.item.office': 'Office cleaning',
+      'services.item.retail': 'Retail cleaning',
+      'services.item.stairwell': 'Stairwell cleaning',
+      'services.item.common': 'Common area cleaning',
+      'services.item.interior': 'Interior & exterior glass',
+      'services.item.streak': 'Streak-free finish',
+      'services.item.turnover': 'Full property turnover clean',
+      'services.item.tenancy': 'End-of-tenancy ready',
+      'services.subTitle': 'Subcontracting Services',
+      'services.subText': 'We provide professional cleaning staff and subcontracting services for cleaning companies — flexible, trained hands whenever you need extra coverage.',
+      'services.subBtn': 'Discuss subcontracting',
+      'gallery.heading': 'OUR WORK',
+      'gallery.title': 'What precision looks like on the job.',
+      'gallery.text': 'A look at the four services we are called for most across Stockholm.',
+      'gallery.residential': 'RESIDENTIAL',
+      'gallery.commercial': 'COMMERCIAL',
+      'gallery.windows': 'WINDOWS',
+      'gallery.moveout': 'MOVE-IN / OUT',
+      'gallery.residentialCap': 'Homes, refreshed room by room',
+      'gallery.commercialCap': 'Offices & retail, ready for business',
+      'gallery.windowsCap': 'Streak-free glass, inside & out',
+      'gallery.moveoutCap': 'Turnover-ready, top to bottom',
+      'why.eyebrow': 'WHY CHOOSE RENPOINTT',
+      'why.title': 'Reliability you can schedule around.',
+      'why.quote': 'Precision in every clean — it is not a slogan, it is the checklist we run on every job.',
+      'why.item1': 'Professional and reliable team',
+      'why.item1p': 'Trained staff who show up and finish the job right.',
+      'why.item2': 'Flexible scheduling',
+      'why.item2p': 'Regular visits or one-off jobs, fitted around you.',
+      'why.item3': 'Affordable pricing',
+      'why.item3p': 'Transparent quotes with no hidden costs.',
+      'why.item4': 'High-quality cleaning standards',
+      'why.item4p': 'Consistent results, job after job.',
+      'why.item5': 'Fully customer-focused',
+      'why.item5p': 'We listen first, then clean to your standard.',
+      'why.item6': 'Serving Stockholm and surrounding areas',
+      'why.item6p': 'Local, responsive, and easy to reach.',
+      'process.eyebrow': 'HOW IT WORKS',
+      'process.title': 'Four steps from first message to spotless.',
+      'process.step1': 'Contact us',
+      'process.step1p': 'Tell us what service you need and where.',
+      'process.step2': 'Free quote',
+      'process.step2p': 'Receive a transparent, no-obligation quotation.',
+      'process.step3': 'Book your service',
+      'process.step3p': 'Choose a convenient date and time.',
+      'process.step4': 'We get the job done',
+      'process.step4p': 'Professional service with attention to every detail.',
+      'about.heading': 'ABOUT US',
+      'about.title': 'Built on dependable results.',
+      'about.text': 'At RenPointt Service, we are committed to delivering dependable cleaning and support services with professionalism, efficiency, and attention to detail. Whether we are serving homeowners, businesses, or working as a subcontractor to other cleaning companies, our goal is to build long-term relationships through outstanding service and reliable results.',
+      'about.supporting': 'Built on experience, consistency, and a strong focus on quality.',
+      'about.monday': 'Mon–Fri',
+      'about.hours1': '07:00–17:00',
+      'about.sat': 'Sat',
+      'about.hours2': '08:00–15:00',
+      'about.se': 'SE',
+      'about.location': 'Stockholm based',
+      'locale.heading': 'SERVICE AREA',
+      'locale.title': 'Proudly serving Stockholm and the surrounding municipalities.',
+      'locale.text': 'Homes, offices, retail units and stairwells across the region — plus subcontracted crews for cleaning companies who need reliable extra hands.',
+      'faq.heading': 'YOU MIGHT ASK',
+      'faq.title': 'Frequently asked questions.',
+      'faq.q1': 'Do you bring your own cleaning supplies and equipment?',
+      'faq.a1': 'Yes — our team arrives with professional-grade supplies and equipment as standard, so there is nothing you need to prepare in advance.',
+      'faq.q2': 'How quickly can I get a quote?',
+      'faq.a2': 'Send your details through the contact form or the quick-quote box in the hero, and we will come back with a free, transparent quote — usually within one business day.',
+      'faq.q3': 'Do you offer one-off cleans or only recurring contracts?',
+      'faq.a3': 'Both. Regular weekly or bi-weekly visits, one-off deep cleans, and move-in / move-out jobs are all available, scheduled around you.',
+      'faq.q4': 'Can cleaning companies subcontract staff through you?',
+      'faq.a4': 'Yes — we provide trained cleaning staff and subcontracting support for other cleaning companies who need reliable extra coverage.',
+      'faq.q5': 'What areas do you serve?',
+      'faq.a5': 'We are based in Stockholm and serve the surrounding areas. Get in touch with your address and we will confirm coverage.',
+      'contact.eyebrow': 'GET IN TOUCH',
+      'contact.heading': "Let's plan your clean.",
+      'contact.subheading': "Send your details and we'll come back with a free, transparent quote.",
+      'contact.address': 'Address',
+      'contact.email': 'Email',
+      'contact.phone': 'Phone',
+      'contact.hours': 'Hours',
+      'contact.formName': 'Name',
+      'contact.formPhone': 'Phone number',
+      'contact.formEmail': 'Email',
+      'contact.formEmailPlaceholder': 'you@example.com',
+      'contact.formService': 'Service required',
+      'contact.formAddress': 'Property address',
+      'contact.formAddressPlaceholder': 'Street, city',
+      'contact.formDate': 'Preferred date',
+      'contact.formMore': 'Additional information',
+      'contact.formMorePlaceholder': 'Anything else we should know?',
+      'contact.formNote': "We'll reply with a free, no-obligation quote — usually within one business day.",
+      'contact.formSubmit': 'Send request',
+      'service.other': 'Other',
+      'footer.services': 'Services',
+      'footer.company': 'Company',
+      'footer.contact': 'Contact',
+      'footer.about': 'About us',
+      'footer.how': 'How it works',
+      'footer.rights': 'All rights reserved.',
+      'footer.tagline': 'Precision in every clean.'
+    },
+    sv: {
+      'nav.services': 'Tjänster',
+      'nav.gallery': 'Galleri',
+      'nav.why': 'Varför oss',
+      'nav.process': 'Process',
+      'nav.about': 'Om oss',
+      'nav.faq': 'FAQ',
+      'nav.contact': 'Kontakt',
+      'nav.quote': 'Få offert',
+      'hero.title1': 'Precision i',
+      'hero.title2': 'varje städning.',
+      'hero.lede': 'RenPointt Service levererar trygg, professionell städning för hem, företag och underleverans i Stockholm — effektiv, pålitlig och med ett resultat du kan se.',
+      'hero.tagline': 'Professionell städning. Pålitlig service.',
+      'hero.primaryBtn': 'Begär gratis offert',
+      'hero.secondaryBtn': 'Utforska tjänster',
+      'hero.stat1': 'Tjänster',
+      'hero.stat2': 'Dagar i veckan',
+      'hero.stat3': 'Vanlig svarstid för offert',
+      'quote.title': 'Få en snabb offert',
+      'quote.subtitle': 'Svar inom 1 arbetsdag',
+      'form.name': 'Namn',
+      'form.namePlaceholder': 'Ditt namn',
+      'form.phone': 'Mobilnummer',
+      'form.phonePlaceholder': '+46 ...',
+      'form.service': 'Tjänst',
+      'form.servicePlaceholder': 'Välj en tjänst',
+      'service.residential': 'Bostadsstädning',
+      'service.commercial': 'Kommersiell städning',
+      'service.windows': 'Fönsterstädning',
+      'service.moveout': 'Inflyttning / Utflyttning',
+      'service.subcontracting': 'Underleverantörstjänster',
+      'quote.button': 'Få offert',
+      'quote.note': 'Ingen förpliktelse — bara ett tydligt svar på pris och tidplan.',
+      'strip.residential': 'Bostadsstädning',
+      'strip.commercial': 'Kommersiell städning',
+      'strip.moveout': 'Inflyttning / Utflyttning',
+      'strip.subcontracting': 'Personal för underleverans',
+      'strip.windows': 'Fönsterstädning',
+      'services.heading': 'VÅRA TJÄNSTER',
+      'services.title': 'Ett pålitligt team för alla typer av lokaler.',
+            'services.text': 'Från ett litet hem till större kommersiella lokaler — och för städföretag som behöver utbildad hjälp vid rätt tidpunkt.',
+      'services.card1': 'Bostadsstädning',
+      'services.card2': 'Kommersiell städning',
+      'services.card3': 'Fönsterstädning',
+      'services.card4': 'Inflyttning / Utflyttning',
+      'services.item.regular': 'Regelbunden städning',
+      'services.item.deep': 'Djupstädning',
+      'services.item.office': 'Kontorsstädning',
+      'services.item.retail': 'Detaljhandelsstädning',
+      'services.item.stairwell': 'Trapphusstädning',
+      'services.item.common': 'Gemensamma ytor',
+      'services.item.interior': 'Invändigt & utvändigt glas',
+      'services.item.streak': 'Fläckfri finish',
+      'services.item.turnover': 'Total städning inför byte',
+      'services.item.tenancy': 'Redo för slutbesiktning',
+      'services.subTitle': 'Städtjänster som underleverantör',
+      'services.subText': 'Vi erbjuder professionell städpersonal som underleverantör till städföretag — flexibel och kompetent förstärkning när ni behöver extra kapacitet.',
+      'services.subBtn': 'Diskutera underleverans',
+      'gallery.heading': 'VÅRT ARBETE',
+      'gallery.title': 'Så ser precision ut i praktiken.',
+      'gallery.text': 'Ett urval av de fyra tjänster vi oftast utför i Stockholm.',
+      'gallery.residential': 'BOSTAD',
+      'gallery.commercial': 'KOMMERS',
+      'gallery.windows': 'FÖNSTER',
+      'gallery.moveout': 'INFLYTTNING / UTFLYTTNING',
+      'gallery.residentialCap': 'Hem, uppfräschade rum för rum',
+      'gallery.commercialCap': 'Kontor & butik, redo för verksamheten',
+      'gallery.windowsCap': 'Fläckfritt glas, in- och utvändigt',
+      'gallery.moveoutCap': 'Redo för byte, från golv till tak',
+      'why.eyebrow': 'VARFÖR RENPOINTT',
+      'why.title': 'Pålitlighet du kan planera efter.',
+      'why.quote': 'Precision i varje städning — det är inte bara en slogan, det är checklistan vi följer på varje jobb.',
+      'why.item1': 'Professionellt och pålitligt team',
+      'why.item1p': 'Utbildad personal som dyker upp och gör jobbet riktigt.',
+      'why.item2': 'Flexibel schemaläggning',
+      'why.item2p': 'Regelbundna besök eller engångsuppdrag, anpassat efter dig.',
+      'why.item3': 'Prisvärda lösningar',
+      'why.item3p': 'Tydliga offerter utan dolda kostnader.',
+      'why.item4': 'Högkvalitativ städstandard',
+      'why.item4p': 'Jämna resultat, jobb efter jobb.',
+      'why.item5': 'Kundfokus i varje steg',
+      'why.item5p': 'Vi lyssnar först och städar sedan efter din standard.',
+      'why.item6': 'Vi täcker Stockholm och omgivning',
+      'why.item6p': 'Lokal, snabb och enkel att nå.',
+      'process.eyebrow': 'SÅ FUNGERAR DET',
+      'process.title': 'Fyra steg från första kontakt till fläckfritt resultat.',
+      'process.step1': 'Kontakta oss',
+      'process.step1p': 'Berätta vad du behöver och var.',
+      'process.step2': 'Gratis offert',
+      'process.step2p': 'Få en tydlig offert utan förpliktelser.',
+      'process.step3': 'Boka din tjänst',
+      'process.step3p': 'Välj ett bekvämt datum och tid.',
+      'process.step4': 'Vi sköter jobbet',
+      'process.step4p': 'Professionell service med fokus på varje detalj.',
+      'about.heading': 'OM OSS',
+      'about.title': 'Byggt på pålitliga resultat.',
+      'about.text': 'Hos RenPointt Service kombinerar vi noggrannhet, professionalism och ett tydligt servicefokus för att leverera städning och support av hög kvalitet. Oavsett om vi arbetar för privatpersoner, företag eller som underleverantör till andra städföretag strävar vi efter långsiktiga relationer byggda på tillförlitlighet och ett konsekvent slutresultat.',
+      'about.supporting': 'Vårt arbete bygger på erfarenhet, konsekvens och ett starkt kvalitetsfokus.',
+      'about.monday': 'Mån–fre',
+      'about.hours1': '07:00–17:00',
+      'about.sat': 'Lör',
+      'about.hours2': '08:00–15:00',
+      'about.se': 'SE',
+      'about.location': 'Stockholm baserat',
+      'locale.heading': 'SERVICEOMRÅDE',
+      'locale.title': 'Stolt leverantör i Stockholm och kringliggande kommuner.',
+      'locale.text': 'Hem, kontor, butiker och trapphus i hela regionen — samt städpersonal till städföretag som behöver pålitlig förstärkning.',
+      'faq.heading': 'FRÅGOR OCH SVAR',
+      'faq.title': 'Vanliga frågor.',
+      'faq.q1': 'Tar ni med egna rengöringsmedel och utrustning?',
+      'faq.a1': 'Ja — vårt team kommer med professionell utrustning och material som standard, så det finns inget du behöver förbereda i förväg.',
+      'faq.q2': 'Hur snabbt kan jag få en offert?',
+      'faq.a2': 'Skicka dina uppgifter via kontaktformuläret eller offertboxen i hero-sektionen, så återkommer vi med en gratis, tydlig offert — vanligtvis inom en arbetsdag.',
+      'faq.q3': 'Erbjuder ni engångsstädning eller endast återkommande kontrakt?',
+      'faq.a3': 'Båda delarna. Regelbundna veckovisa eller varannanveckovisa besök, djupstädning och inflyttnings-/utflyttningsjobb finns alla tillgängliga och kan anpassas efter dig.',
+      'faq.q4': 'Kan städföretag anlita personal genom er?',
+      'faq.a4': 'Ja — vi tillhandahåller utbildad städpersonal och underleveransstöd för andra städföretag som behöver pålitlig extra kapacitet.',
+      'faq.q5': 'Vilka områden servar ni?',
+      'faq.a5': 'Vi är baserade i Stockholm och servar omkringliggande områden. Hör av dig med din adress så bekräftar vi täckning.',
+      'contact.eyebrow': 'KONTAKTA OSS',
+      'contact.heading': 'Låt oss planera din städning.',
+      'contact.subheading': 'Skicka dina uppgifter så återkommer vi med en gratis och tydlig offert.',
+      'contact.address': 'Adress',
+      'contact.email': 'E-post',
+      'contact.phone': 'Telefon',
+      'contact.hours': 'Öppettider',
+      'contact.formName': 'Namn',
+      'contact.formPhone': 'Telefonnummer',
+      'contact.formEmail': 'E-post',
+      'contact.formEmailPlaceholder': 'du@example.com',
+      'contact.formService': 'Tjänst som krävs',
+      'contact.formAddress': 'Fastighetsadress',
+      'contact.formAddressPlaceholder': 'Gata, stad',
+      'contact.formDate': 'Önskat datum',
+      'contact.formMore': 'Ytterligare information',
+      'contact.formMorePlaceholder': 'Något annat vi bör veta?',
+      'contact.formNote': 'Vi återkommer med en gratis offert utan förpliktelse — vanligtvis inom en arbetsdag.',
+      'contact.formSubmit': 'Skicka förfrågan',
+      'service.other': 'Övrigt',
+      'footer.services': 'Tjänster',
+      'footer.company': 'Företag',
+      'footer.contact': 'Kontakt',
+      'footer.about': 'Om oss',
+      'footer.how': 'Så fungerar det',
+      'footer.rights': 'Alla rättigheter förbehållna.',
+      'footer.tagline': 'Precision i varje städning.'
+    }
+  };
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const langSelect = document.getElementById('langSelect');
+  const themeToggle = document.getElementById('themeToggle');
+
+  const themeIcons = {
+    dark: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4.2"></circle>
+        <g stroke-linecap="round">
+          <line x1="12" y1="1.8" x2="12" y2="4.3"></line>
+          <line x1="12" y1="19.7" x2="12" y2="22.2"></line>
+          <line x1="4.3" y1="4.3" x2="6.1" y2="6.1"></line>
+          <line x1="17.9" y1="17.9" x2="19.7" y2="19.7"></line>
+          <line x1="1.8" y1="12" x2="4.3" y2="12"></line>
+          <line x1="19.7" y1="12" x2="22.2" y2="12"></line>
+          <line x1="4.3" y1="19.7" x2="6.1" y2="17.9"></line>
+          <line x1="17.9" y1="6.1" x2="19.7" y2="4.3"></line>
+        </g>
+      </svg>
+    `,
+    light: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M20 14.2A7.5 7.5 0 0 1 9.8 4a8 8 0 1 0 10.2 10.2Z"></path>
+      </svg>
+    `
+  };
+
+  function setTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+    themeToggle.innerHTML = themeIcons[theme === 'dark' ? 'dark' : 'light'];
+    themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    localStorage.setItem('rp-theme', theme);
+  }
+
+  function applyLanguage(lang) {
+    const dict = translations[lang] || translations.en;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      if (dict[key]) el.textContent = dict[key];
+    });
+    document.querySelectorAll('[data-placeholder]').forEach(el => {
+      const key = el.dataset.placeholder;
+      if (dict[key]) el.placeholder = dict[key];
+    });
+    document.documentElement.lang = lang;
+    langSelect.value = lang;
+    localStorage.setItem('rp-lang', lang);
+  }
+
+  const savedTheme = localStorage.getItem('rp-theme') || 'dark';
+  const savedLang = localStorage.getItem('rp-lang') || (navigator.language.toLowerCase().startsWith('sv') ? 'sv' : 'en');
+  setTheme(savedTheme);
+  applyLanguage(savedLang);
+
+  themeToggle.addEventListener('click', () => {
+    const nextTheme = document.body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    setTheme(nextTheme);
+  });
+
+  langSelect.addEventListener('change', event => applyLanguage(event.target.value));
+
+  // header solid on scroll
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('solid', window.scrollY > 40);
+  });
+
+  // mobile menu
+  const burger = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileClose = document.getElementById('mobileClose');
+  burger.addEventListener('click', () => mobileMenu.classList.add('open'));
+  mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // reveal on scroll
+  const rvEls = document.querySelectorAll('.rv');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        if (e.target.id === 'aboutFrame') e.target.classList.add('in-view');
+      }
+    });
+  }, { threshold: 0.18 });
+  rvEls.forEach(el => io.observe(el));
+
+  // contact form -> mailto handoff
+  const form = document.getElementById('quoteForm');
+  const status = document.getElementById('formStatus');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(form).entries());
+    const body =
+      `Name: ${d.name}\nPhone: ${d.phone}\nEmail: ${d.email}\nService required: ${d.service}\n` +
+      `Property address: ${d.address || '—'}\nPreferred date: ${d.date || '—'}\n\nAdditional information:\n${d.more || '—'}`;
+    const mailto = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('Quote request — ' + d.service)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+    status.textContent = 'Opening your email client to send this request…';
+  });
+
+  // hero quick-quote form -> mailto handoff
+  const heroForm = document.getElementById('heroQuoteForm');
+  heroForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(heroForm).entries());
+    const body = `Name: ${d.name}\nPhone: ${d.phone}\nService required: ${d.service}\n\n(Sent via the hero quick-quote form)`;
+    window.location.href = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('Quick quote request — ' + d.service)}&body=${encodeURIComponent(body)}`;
+  });
+
+  // lightbox for gallery images
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightboxImg');
+  const lbCap = document.getElementById('lightboxCap');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const img = item.querySelector('img');
+      const cap = item.querySelector('.gallery-cap h4')?.textContent || '';
+      lbImg.src = img.src.replace('w=900', 'w=1600');
+      lbImg.alt = img.alt;
+      lbCap.textContent = cap;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', () => lb.classList.remove('open'));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
