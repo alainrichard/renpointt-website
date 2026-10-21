@@ -9,6 +9,8 @@
 <meta name="author" content="RenPointt Service">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0D1626">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; frame-src https://www.google.com; form-action 'self' mailto:; upgrade-insecure-requests">
 <link rel="canonical" href="https://www.renpointt.se/">
 
 <!-- Open Graph -->
@@ -603,16 +605,30 @@
   .careers{background:var(--surface-soft);}
   .careers-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,0.9fr); gap:clamp(32px,6vw,80px); align-items:start;}
   .careers-copy p{max-width:540px; line-height:1.8;}
+  .career-kicker{display:inline-flex; align-items:center; gap:9px; margin-bottom:20px; padding:8px 12px; border:1px solid var(--surface-border); border-radius:999px; background:var(--surface-raised); color:var(--heading); font-size:12px; font-weight:600;}
+  .career-kicker::before{width:7px; height:7px; border-radius:50%; background:var(--gold); content:"";}
+  .careers-copy .section-head{margin-bottom:28px;}
+  .career-details{margin-top:30px; padding-top:24px; border-top:1px solid var(--surface-border);}
+  .career-details h3,.career-privacy h3{margin-bottom:10px; color:var(--heading); font-size:16px; font-weight:700;}
+  .career-details ul{display:grid; gap:10px; max-width:520px;}
+  .career-details li{position:relative; padding-left:19px; color:var(--copy); font-size:14px; line-height:1.7;}
+  .career-details li::before{position:absolute; left:0; color:var(--gold); content:"•";}
+  .career-privacy{margin-top:22px; padding:20px; border:1px solid var(--surface-border); border-left:3px solid var(--gold); border-radius:8px; background:var(--surface-raised);}
+  .career-privacy p{color:var(--copy); font-size:13px; line-height:1.75;}
   .career-form{padding:clamp(22px,4vw,38px); border:1px solid var(--surface-border); border-radius:14px; background:var(--surface-raised); box-shadow:0 18px 48px rgba(0,0,0,0.08);}
+  .career-form h3{margin-bottom:24px; color:var(--heading); font-family:'Montserrat',sans-serif; font-size:21px; letter-spacing:-0.025em;}
   .career-form .field{margin-bottom:18px;}
   .career-form .field label{display:block; margin-bottom:8px; color:var(--heading); font-size:13px; font-weight:600;}
   .career-form .field input,.career-form .field select,.career-form .field textarea{width:100%; padding:13px 14px; border:1px solid var(--surface-border); border-radius:7px; background:var(--surface); color:var(--heading); font:inherit;}
+  .career-form .field input:focus,.career-form .field select:focus,.career-form .field textarea:focus{outline:3px solid rgba(197,155,45,0.25); border-color:var(--gold);}
   .career-form .field input::placeholder,.career-form .field textarea::placeholder{color:var(--copy); opacity:0.8;}
   .career-form .field textarea{min-height:120px; resize:vertical;}
   .career-form .field select option{background:var(--surface-raised); color:var(--heading);}
   .career-form .form-note{display:block; margin:0 0 18px; color:var(--copy); font-size:13px; line-height:1.7;}
   .career-form .btn-primary{width:100%;}
   .career-status{min-height:1.4em; margin:14px 0 0; color:var(--copy); font-size:13px;}
+  .career-email-fallback{margin:10px 0 0; text-align:center; color:var(--copy); font-size:13px;}
+  .career-email-fallback a{color:var(--heading); text-decoration:underline; text-underline-offset:3px;}
 
   header{padding:18px 0;}
   header.solid{box-shadow:0 8px 28px rgba(5,13,24,0.12); backdrop-filter:blur(16px);}
@@ -1119,26 +1135,39 @@
 <section class="careers" id="careers">
   <div class="wrap careers-grid">
     <div class="careers-copy rv">
+      <span class="career-kicker" data-i18n="careers.kicker">Open applications</span>
       <div class="section-head">
         <div class="eyebrow"><span class="rule"></span><span data-i18n="careers.eyebrow">CAREERS</span></div>
-        <h2 data-i18n="careers.title">Build a career with RenPointt.</h2>
-        <p data-i18n="careers.intro">We welcome applications from reliable, service-minded people interested in professional cleaning work in Stockholm. Send a spontaneous application and tell us about your experience and availability.</p>
+        <h2 data-i18n="careers.title">Build your future with RenPointt.</h2>
+        <p data-i18n="careers.intro">We welcome interest from dependable, service-minded people who take pride in their work. Tell us about your experience, the work you are interested in, and when you are available.</p>
       </div>
-      <p data-i18n="careers.opportunities">We do not list specific vacancies here. If a suitable opportunity becomes available, we will get in touch.</p>
+      <div class="career-details">
+        <h3 data-i18n="careers.expectTitle">What to expect</h3>
+        <ul>
+          <li data-i18n="careers.expect1">Share a short introduction and your relevant experience.</li>
+          <li data-i18n="careers.expect2">We will reach out if a suitable opportunity becomes available.</li>
+          <li data-i18n="careers.expect3">An open application is not a guarantee of a current vacancy.</li>
+        </ul>
+      </div>
+      <aside class="career-privacy" aria-labelledby="careerPrivacyTitle">
+        <h3 id="careerPrivacyTitle" data-i18n="careers.privacyTitle">Your information, in your control</h3>
+        <p data-i18n="careers.privacy">This form prepares a draft in your email app; this website does not upload or store your application. Review the draft before sending. Share only information relevant to your application—never your personal identity number, bank details, passwords, or other sensitive information.</p>
+      </aside>
     </div>
     <form id="careerForm" class="career-form rv">
+      <h3 data-i18n="careers.formTitle">Introduce yourself</h3>
       <div class="field">
         <label for="careerName" data-i18n="careers.name">Full name</label>
-        <input id="careerName" name="name" type="text" autocomplete="name" required>
+        <input id="careerName" name="name" type="text" autocomplete="name" maxlength="100" required>
       </div>
       <div class="form-row">
         <div class="field">
           <label for="careerEmail" data-i18n="careers.email">Email</label>
-          <input id="careerEmail" name="email" type="email" autocomplete="email" required>
+          <input id="careerEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
         </div>
         <div class="field">
           <label for="careerPhone" data-i18n="careers.phone">Phone number</label>
-          <input id="careerPhone" name="phone" type="tel" autocomplete="tel" required>
+          <input id="careerPhone" name="phone" type="tel" autocomplete="tel" maxlength="30" required>
         </div>
       </div>
       <div class="field">
@@ -1154,11 +1183,13 @@
       </div>
       <div class="field">
         <label for="careerMessage" data-i18n="careers.message">Tell us about your experience and availability</label>
-        <textarea id="careerMessage" name="message" required></textarea>
+        <textarea id="careerMessage" name="message" maxlength="500" aria-describedby="careerMessageHelp" required></textarea>
+        <small class="form-note" id="careerMessageHelp" data-i18n="careers.messageHelp">Keep your introduction brief (up to 500 characters) and avoid sensitive personal details.</small>
       </div>
-      <p class="form-note" data-i18n="careers.note">Submitting opens your email app with your application details. Please attach your CV or résumé before sending; the website cannot attach files.</p>
-      <button type="submit" class="btn-primary" data-i18n="careers.submit">Prepare application email</button>
+      <p class="form-note" data-i18n="careers.note">Selecting this button opens a draft in your email app. Nothing is sent until you review and send the email. Attach your CV only if you are comfortable sharing it; this website cannot attach files.</p>
+      <button type="submit" class="btn-primary" data-i18n="careers.submit">Continue in email</button>
       <p class="career-status" id="careerStatus" aria-live="polite"></p>
+      <p class="career-email-fallback"><span data-i18n="careers.emailFallback">Email us directly:</span> <a href="mailto:renpointt@gmail.com">renpointt@gmail.com</a></p>
     </form>
   </div>
 </section>
@@ -1273,6 +1304,7 @@
         <div>
           <h6 data-i18n="footer.company">Company</h6>
           <a href="#about" data-i18n="nav.about">About us</a>
+          <a href="#careers" data-i18n="nav.careers">Careers</a>
           <a href="#process" data-i18n="nav.process">How it works</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </div>
@@ -1308,6 +1340,7 @@
       'nav.why': 'Why Us',
       'nav.process': 'Process',
       'nav.about': 'About',
+      'nav.careers': 'Careers',
       'nav.faq': 'FAQ',
       'nav.contact': 'Contact',
       'nav.quote': 'Get a Quote',
@@ -1406,6 +1439,34 @@
       'about.hours2': '08:00–15:00',
       'about.se': 'SE',
       'about.location': 'Stockholm based',
+      'careers.kicker': 'Open applications',
+      'careers.eyebrow': 'CAREERS',
+      'careers.title': 'Build your future with RenPointt.',
+      'careers.intro': 'We welcome interest from dependable, service-minded people who take pride in their work. Tell us about your experience, the work you are interested in, and when you are available.',
+      'careers.expectTitle': 'What to expect',
+      'careers.expect1': 'Share a short introduction and your relevant experience.',
+      'careers.expect2': 'We will reach out if a suitable opportunity becomes available.',
+      'careers.expect3': 'An open application is not a guarantee of a current vacancy.',
+      'careers.privacyTitle': 'Your information, in your control',
+      'careers.privacy': 'This form prepares a draft in your email app; this website does not upload or store your application. Review the draft before sending. Share only information relevant to your application—never your personal identity number, bank details, passwords, or other sensitive information.',
+      'careers.formTitle': 'Introduce yourself',
+      'careers.name': 'Full name',
+      'careers.email': 'Email',
+      'careers.phone': 'Phone number',
+      'careers.role': 'Area of interest',
+      'careers.rolePlaceholder': 'Choose an area',
+      'careers.roleResidential': 'Residential cleaning',
+      'careers.roleCommercial': 'Commercial cleaning',
+      'careers.roleWindows': 'Window cleaning',
+      'careers.roleSubcontracting': 'Subcontracting',
+      'careers.roleOther': 'Other',
+      'careers.message': 'Tell us about your experience and availability',
+      'careers.messageHelp': 'Keep your introduction brief (up to 500 characters) and avoid sensitive personal details.',
+      'careers.note': 'Selecting this button opens a draft in your email app. Nothing is sent until you review and send the email. Attach your CV only if you are comfortable sharing it; this website cannot attach files.',
+      'careers.submit': 'Continue in email',
+      'careers.emailFallback': 'Email us directly:',
+      'careers.emailReady': 'Your email draft should open in your email app. Review it and send it when ready.',
+      'careers.emailTooLong': 'This application is too long to open as an email draft. Shorten your introduction or email us directly.',
       'locale.heading': 'SERVICE AREA',
       'locale.title': 'Proudly serving Stockholm and the surrounding municipalities.',
       'locale.text': 'Homes, offices, retail units and stairwells across the region — plus subcontracted crews for cleaning companies who need reliable extra hands.',
@@ -1455,6 +1516,7 @@
       'nav.why': 'Varför oss',
       'nav.process': 'Process',
       'nav.about': 'Om oss',
+      'nav.careers': 'Jobba hos oss',
       'nav.faq': 'FAQ',
       'nav.contact': 'Kontakt',
       'nav.quote': 'Få offert',
@@ -1553,6 +1615,34 @@
       'about.hours2': '08:00–15:00',
       'about.se': 'SE',
       'about.location': 'Stockholm baserat',
+      'careers.kicker': 'Spontanansökningar',
+      'careers.eyebrow': 'JOBBA HOS OSS',
+      'careers.title': 'Bygg din framtid med RenPointt.',
+      'careers.intro': 'Vi välkomnar intresse från pålitliga och serviceinriktade personer som är stolta över sitt arbete. Berätta om din erfarenhet, vilka arbetsuppgifter du är intresserad av och när du kan arbeta.',
+      'careers.expectTitle': 'Det här kan du förvänta dig',
+      'careers.expect1': 'Berätta kort om dig själv och din relevanta erfarenhet.',
+      'careers.expect2': 'Vi hör av oss om en passande möjlighet blir aktuell.',
+      'careers.expect3': 'En spontanansökan innebär ingen garanti för en ledig tjänst.',
+      'careers.privacyTitle': 'Du har kontroll över dina uppgifter',
+      'careers.privacy': 'Formuläret skapar ett utkast i ditt e-postprogram; webbplatsen laddar inte upp eller sparar din ansökan. Granska utkastet innan du skickar det. Dela bara uppgifter som är relevanta för ansökan—aldrig personnummer, bankuppgifter, lösenord eller annan känslig information.',
+      'careers.formTitle': 'Berätta om dig själv',
+      'careers.name': 'Fullständigt namn',
+      'careers.email': 'E-post',
+      'careers.phone': 'Telefonnummer',
+      'careers.role': 'Intresseområde',
+      'careers.rolePlaceholder': 'Välj område',
+      'careers.roleResidential': 'Hemstädning',
+      'careers.roleCommercial': 'Företagsstädning',
+      'careers.roleWindows': 'Fönsterputs',
+      'careers.roleSubcontracting': 'Underleverans',
+      'careers.roleOther': 'Övrigt',
+      'careers.message': 'Berätta om din erfarenhet och tillgänglighet',
+      'careers.messageHelp': 'Håll presentationen kort (högst 500 tecken) och undvik känsliga personuppgifter.',
+      'careers.note': 'Knappen öppnar ett utkast i ditt e-postprogram. Inget skickas förrän du har granskat och skickat e-postmeddelandet. Bifoga CV endast om du känner dig bekväm med det; webbplatsen kan inte bifoga filer.',
+      'careers.submit': 'Fortsätt i e-post',
+      'careers.emailFallback': 'E-posta oss direkt:',
+      'careers.emailReady': 'Ett e-postutkast bör öppnas i ditt e-postprogram. Granska det och skicka när du är redo.',
+      'careers.emailTooLong': 'Ansökan är för lång för att öppnas som ett e-postutkast. Korta ned presentationen eller e-posta oss direkt.',
       'locale.heading': 'SERVICEOMRÅDE',
       'locale.title': 'Stolt leverantör i Stockholm och kringliggande kommuner.',
       'locale.text': 'Hem, kontor, butiker och trapphus i hela regionen — samt städpersonal till städföretag som behöver pålitlig förstärkning.',
@@ -1707,6 +1797,26 @@
     const d = Object.fromEntries(new FormData(heroForm).entries());
     const body = `Name: ${d.name}\nPhone: ${d.phone}\nService required: ${d.service}\n\n(Sent via the hero quick-quote form)`;
     window.location.href = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('Quick quote request — ' + d.service)}&body=${encodeURIComponent(body)}`;
+  });
+
+  // Career applications are prepared locally as an email draft; nothing is uploaded.
+  const careerForm = document.getElementById('careerForm');
+  const careerStatus = document.getElementById('careerStatus');
+  careerForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!careerForm.reportValidity()) return;
+    const d = Object.fromEntries(new FormData(careerForm).entries());
+    const role = careerForm.querySelector('[name="role"]');
+    const body =
+      `Name: ${d.name}\nEmail: ${d.email}\nPhone: ${d.phone}\nArea of interest: ${role.selectedOptions[0].text}\n\n` +
+      `Experience and availability:\n${d.message}`;
+    const mailto = `mailto:renpointt@gmail.com?subject=${encodeURIComponent('RenPointt application')}&body=${encodeURIComponent(body)}`;
+    if (mailto.length > 1800) {
+      careerStatus.textContent = translations[langSelect.value]['careers.emailTooLong'];
+      return;
+    }
+    careerStatus.textContent = translations[langSelect.value]['careers.emailReady'];
+    window.location.href = mailto;
   });
 
   // lightbox for gallery images
